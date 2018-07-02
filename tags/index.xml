@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 3panda</title>
-    <link>3panda.net/tags/</link>
+    <link>3panda.github.io/tags/</link>
     <description>Recent content in Tags on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 02 Jul 2018 09:52:17 +0900</lastBuildDate>
     
-	<atom:link href="3panda.net/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="3panda.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>3panda.net/tags/</link>
+      <link>3panda.github.io/tags/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>3panda.net/tags/</guid>
+      <guid>3panda.github.io/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ひとりごと</title>
-      <link>3panda.net/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
+      <link>3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>3panda.net/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
+      <guid>3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
       <description></description>
     </item>
     

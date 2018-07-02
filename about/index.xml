@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3panda</title>
-    <link>3panda.net/about/</link>
+    <link>3panda.github.io/about/</link>
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 02 Jul 2018 09:52:17 +0900</lastBuildDate>
     
-	<atom:link href="3panda.net/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="3panda.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3panda</title>
-    <link>3panda.net/</link>
+    <link>3panda.github.io/</link>
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 02 Jul 2018 09:52:17 +0900</lastBuildDate>
     
-	<atom:link href="3panda.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>新生活</title>
-      <link>3panda.net/posts/20180702/</link>
+      <link>3panda.github.io/posts/20180702/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>3panda.net/posts/20180702/</guid>
+      <guid>3panda.github.io/posts/20180702/</guid>
       <description>今日から新しい生活が始まるのでBLOGを書いてみる事にした。
 色々あって会社勤めを辞める事になりました。
 10年くらいぶりにどこの企業にも所属していない状態です。
