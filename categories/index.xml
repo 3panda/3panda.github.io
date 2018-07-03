@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 3panda</title>
+    <title>3panda</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on 3panda</description>
+    <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Jul 2018 09:52:17 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jul 2018 10:51:43 +0900</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>2018 FIFAワールドカップ ロシア</title>
+      <link>/posts/20180703/</link>
+      <pubDate>Tue, 03 Jul 2018 10:51:43 +0900</pubDate>
+      
+      <guid>/posts/20180703/</guid>
+      <description>日本がベルギーに負けました。
+サッカーに詳しく無い私は語るべきじゃ無いんでしょうが
+日本は頑張ったと思います。
+格上相手に二点も取れたのは凄いと正直思いました。
+何はともあれ日本代表と関係者の方々、お疲れ様でした！
+以上！</description>
+    </item>
+    
+    <item>
       <title></title>
-      <link>/categories/</link>
+      <link>/about/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>/categories/</guid>
-      <description></description>
+      <guid>/about/</guid>
+      <description>ここにだいたい書いてます。</description>
+    </item>
+    
+    <item>
+      <title>新生活</title>
+      <link>/posts/20180702/</link>
+      <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
+      
+      <guid>/posts/20180702/</guid>
+      <description>今日から新しい生活が始まるのでBLOGを書いてみる事にした。
+色々あって会社勤めを辞める事になりました。
+10年くらいぶりにどこの企業にも所属していない状態です。
+正直非常事態です。
+ただ、地道にお仕事探し（就職活動、個人でのお仕事の営業活動）をしていた成果がようやく出始めて今月は色々忙しいそうです。
+お金になるのはまだ先になりそうだけど、長期的に考えて有意義な1ヶ月になると思う。いやしないといけない。
+取り急ぎ、初日はこんなところで</description>
     </item>
     
   </channel>
