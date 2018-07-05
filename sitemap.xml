@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/20180705/</loc>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/20180704/</loc>
     <lastmod>2018-07-04T09:30:14+09:00</lastmod>
   </url>
@@ -30,25 +35,25 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-07-04T09:30:14+09:00</lastmod>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-07-04T09:30:14+09:00</lastmod>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-07-04T09:30:14+09:00</lastmod>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2018-07-04T09:30:14+09:00</lastmod>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -61,6 +66,12 @@
   <url>
     <loc>/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</loc>
     <lastmod>2018-07-04T09:30:14+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%BB%A2%E8%81%B7/</loc>
+    <lastmod>2018-07-05T09:49:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
