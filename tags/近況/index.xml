@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>近況 on 3panda</title>
-    <link>/tags/%E8%BF%91%E6%B3%81/</link>
+    <link>3panda.github.io/tags/%E8%BF%91%E6%B3%81/</link>
     <description>Recent content in 近況 on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 06 Jul 2018 09:11:12 +0900</lastBuildDate>
     
-	<atom:link href="/tags/%E8%BF%91%E6%B3%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="3panda.github.io/tags/%E8%BF%91%E6%B3%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>雨</title>
-      <link>/posts/20180706/</link>
+      <link>3panda.github.io/posts/20180706/</link>
       <pubDate>Fri, 06 Jul 2018 09:11:12 +0900</pubDate>
       
-      <guid>/posts/20180706/</guid>
+      <guid>3panda.github.io/posts/20180706/</guid>
       <description>今日はものすごい雨で始発から電車が止まっていたり、
 本数が減っていたりと大荒れの様子。
 会社勤めをしなくなって最初の一週間が過ぎ、

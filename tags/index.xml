@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 3panda</title>
-    <link>/tags/</link>
+    <link>3panda.github.io/tags/</link>
     <description>Recent content in Tags on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 02 Jul 2018 09:52:17 +0900</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="3panda.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/tags/</link>
+      <link>3panda.github.io/tags/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>/tags/</guid>
+      <guid>3panda.github.io/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ひとりごと</title>
-      <link>/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
+      <link>3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
       <pubDate>Wed, 04 Jul 2018 09:30:14 +0900</pubDate>
       
-      <guid>/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
+      <guid>3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>転職</title>
-      <link>/tags/%E8%BB%A2%E8%81%B7/</link>
+      <link>3panda.github.io/tags/%E8%BB%A2%E8%81%B7/</link>
       <pubDate>Thu, 05 Jul 2018 09:49:06 +0900</pubDate>
       
-      <guid>/tags/%E8%BB%A2%E8%81%B7/</guid>
+      <guid>3panda.github.io/tags/%E8%BB%A2%E8%81%B7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>近況</title>
-      <link>/tags/%E8%BF%91%E6%B3%81/</link>
+      <link>3panda.github.io/tags/%E8%BF%91%E6%B3%81/</link>
       <pubDate>Fri, 06 Jul 2018 09:11:12 +0900</pubDate>
       
-      <guid>/tags/%E8%BF%91%E6%B3%81/</guid>
+      <guid>3panda.github.io/tags/%E8%BF%91%E6%B3%81/</guid>
       <description></description>
     </item>
     
