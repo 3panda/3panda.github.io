@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ひとりごと on 3panda</title>
-    <link>3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
+    <link>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
     <description>Recent content in ひとりごと on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 04 Jul 2018 09:30:14 +0900</lastBuildDate>
     
-	<atom:link href="3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>久々に実家に行って来ました</title>
-      <link>3panda.github.io/posts/20180704/</link>
+      <link>https://3panda.github.io/posts/20180704/</link>
       <pubDate>Wed, 04 Jul 2018 09:30:14 +0900</pubDate>
       
-      <guid>3panda.github.io/posts/20180704/</guid>
+      <guid>https://3panda.github.io/posts/20180704/</guid>
       <description>昨日は久々に実家に帰りました。
 そして美容院に。
 美容院は実家に住んでいたところから同じお店に 10年以上通ってます。
@@ -41,10 +41,10 @@
     
     <item>
       <title>2018 FIFAワールドカップ ロシア</title>
-      <link>3panda.github.io/posts/20180703/</link>
+      <link>https://3panda.github.io/posts/20180703/</link>
       <pubDate>Tue, 03 Jul 2018 10:51:43 +0900</pubDate>
       
-      <guid>3panda.github.io/posts/20180703/</guid>
+      <guid>https://3panda.github.io/posts/20180703/</guid>
       <description>日本がベルギーに負けました。
 サッカーに詳しく無い私は語るべきじゃ無いんでしょうが
 日本は頑張ったと思います。
@@ -55,10 +55,10 @@
     
     <item>
       <title>新生活</title>
-      <link>3panda.github.io/posts/20180702/</link>
+      <link>https://3panda.github.io/posts/20180702/</link>
       <pubDate>Mon, 02 Jul 2018 09:52:17 +0900</pubDate>
       
-      <guid>3panda.github.io/posts/20180702/</guid>
+      <guid>https://3panda.github.io/posts/20180702/</guid>
       <description>今日から新しい生活が始まるのでBLOGを書いてみる事にした。
 色々あって会社勤めを辞める事になりました。
 10年くらいぶりにどこの企業にも所属していない状態です。
