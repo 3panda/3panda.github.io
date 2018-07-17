@@ -6,10 +6,27 @@
     <description>Recent content in ひとりごと on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Jul 2018 15:05:18 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jul 2018 09:43:51 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>今日はお休み</title>
+      <link>https://3panda.github.io/posts/20180717/</link>
+      <pubDate>Tue, 17 Jul 2018 09:43:51 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180717/</guid>
+      <description>ここ1週間くらいずっとやっていたWebアプリのモックが完成しました。
+使った技術はこんな感じです↓
+ React (TypeScript) Lambda (Python) API Gateway Backlog API  今回、BacklogのAPIを使うものだったので当然バックの処理が必要に(もしかしたら何かJavaScriptだけで出来る方法ある？)なりました。
+そこは今年になって必要に迫られて触れるようになったLambda(Python)とAPI Gatewayで行いました。バックは苦労して覚えた甲斐もありそれほど苦戦せず順調に終えられました。
+問題はフロント部分。 フロントの使用技術はReact (TypeScript)。 Reactはちゃんと触ったのが初めてで、しかもTypeScriptを使うと言うオーダーだったので正直苦戦しましたが良い勉強になりました。
+詳細はまた技術ネタとして記事にしようと思います。
+そんなわけで世間はお休みの連休中、結構がっつり開発していたので本日はお休みを頂きますー
+今回の開発で得た事は忘備録代わりに記事にしていく予定（あくまで予定w）です。
+ではでは</description>
+    </item>
     
     <item>
       <title>ひさしぶりに歩きました</title>
