@@ -6,10 +6,35 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Jul 2018 09:43:51 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jul 2018 16:02:34 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>帰って来た3panda</title>
+      <link>https://3panda.github.io/posts/20180718/</link>
+      <pubDate>Wed, 18 Jul 2018 16:02:34 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180718/</guid>
+      <description>とっても今更なお話ですが&amp;hellip;
+ここ二年くらいモバイルゲームのエンジニアをやって来たのですが、この度Webの人として返り咲きました。
+今年に入ってLambda(サーバーレス)をやっていたのでWebの技術には触れていたのですが、 フロント側と連携する事も殆どなくて、あまり実感はありませんでした。
+実感を持ってたのは今月に入ってReactをやるようになってからですかね。
+Reactなので必然的にHTMLはもちろん、CSSも書く事になるので
+「あぁ、Webだ」
+と実感するようになりました。
+この二年間、Webについては一応は情報は追ってはいたんですが、進歩が早くて浦島太郎状態です(^^:
+Gruntはいつの間にか姿が見えなくなり、glupは触る前に見かけなくなり、今はタスクランナーとかはWebpackなんですね。
+CSSプロセッサはPostCSSはまだ何となく、SASSは「知ってるぞ！」って思っていたらnode-sassだし(元はRubyで基本同じだけど)&amp;hellip;
+まぁ相変わらずなのはWebのフロントは環境構築が大変&amp;hellip;
+それでもJavaScriptのフレームワークはReact.jsやVue.jsが定着化し
+Alt.jsもTypeScriptかBabel(正確にはAltでは無い？)のほぼ二つは定番として落ち着いているので 今が新たにWebを始めるには丁度良い時期なのかもしれません。
+そんなわけで3pandaは気持ちを新たにWebのエンジニアとして頑張って参ります。
+今後ともよろしくお願い致します。
+PS:
+大阪、京都周辺の皆様、また勉強会やりましょう！！</description>
+    </item>
     
     <item>
       <title>今日はお休み</title>
