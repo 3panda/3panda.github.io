@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://3panda.github.io/posts/20180719/</loc>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://3panda.github.io/posts/20180718/</loc>
     <lastmod>2018-07-18T16:02:34+09:00</lastmod>
   </url>
@@ -75,31 +80,43 @@
   
   <url>
     <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2018-07-18T16:02:34+09:00</lastmod>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/</loc>
-    <lastmod>2018-07-18T16:02:34+09:00</lastmod>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/tags/aws/</loc>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2018-07-18T16:02:34+09:00</lastmod>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/posts/</loc>
-    <lastmod>2018-07-18T16:02:34+09:00</lastmod>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/tags/</loc>
     <lastmod>2018-07-02T09:52:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/tags/tec/</loc>
+    <lastmod>2018-07-19T11:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
