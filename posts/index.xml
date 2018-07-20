@@ -6,10 +6,28 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Jul 2018 11:20:14 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jul 2018 09:40:22 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一つのデバイスで複数のGitアカウントを管理する</title>
+      <link>https://3panda.github.io/posts/20180720/</link>
+      <pubDate>Fri, 20 Jul 2018 09:40:22 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180720/</guid>
+      <description>一つのデバイスで複数のGitHubアカウントを管理したい時の方法をまとめてみました。
+利用が想定されるケースは少ないかもしれませんが、私は必要に迫られたので今後のためにまとめておきます。
+誰かのお役に立てれば幸いです。
+前提条件 サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。
+configにサブアカウント用の設定を追加 ~/.ssh/config configにgithub-subの設定を用意します。 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。
+# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git  clone HostNameのところをsubの変更して行います。
+git clone @github-sub:XXXX/xxxx.git:  もし cloneで怒られたらこれ
+git remote rm origin  submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
+git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &amp;ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
+この設定が無いとglobalで設定されたuserで反映されてしまいます。</description>
+    </item>
     
     <item>
       <title>AWS Lambda( &#43; APIGateway) を使ったAjaxなWebフォームを作ってみる</title>
