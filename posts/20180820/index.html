@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://3panda.github.io/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="マークアップの事とかマークアップエンジニア(コーダー)でご飯が食べれるのかとかそんな話"/>
+  <meta name="twitter:description" content="誰に読んで欲しい  これからWeb業界に入ろうとする人 現在スクールで勉強している人  何様が語るのか 私は元々はWebデザイナーのアシスタントの様な事から始まり、Web標準の時代になって分業が進んだ時代にマークアップエンジニアとしてHTMLとCSSを専門にお仕事をしていました。
+その後、Web2.0とかAjaxとかの時代でjQueryも触る様になって、ちょっとした動きをつけたり組んでいました。
+個人的にはjQueryよりも生のJavaScriptを触るのが好きで、可能な限りはjQueryは避けていましたがスケジュールの都合とかでjQueryを使わざる得ない事も多かったです。
+その後に色々と経て、モバイルゲームエンジニアになりC#(Unityに限定だけど)を書く様になって、本格的なプログラミングをする様になりました。
+マークアップエンジニアについて改めて HTMLの正式な名称がHyperText Markup Language（ハイパーテキスト マークアップ ランゲージ)である事からHTMLを組む事（付随してCSSでデザインも定義する事）をマークアップと言い、それを行う人をマークアップエンジニアと呼ぶ事があります。
+コーダーと言う言い方の方が昔からありますが、Tableレイアウトの時代のデザインをただWebブラウザ再現する時代の言い方で個人的にはあまり好きではありません。
+また
+「HTMLとCSSを書いているだけでエンジニアと名乗るな！」
+など言っている人もしますが エンジニアとは技術者の事を指す言葉 である為、何も間違ってはいないと思います。
+エンジニアとはプログラミングをする人の事を指す言葉と思われているなら、その方は少し知見が無さすぎでは無いでしょうか。
+まぁ、そんな人は無視しておきましょう。
+マークアップエンジニア(コーダー)でご飯を食べれるのか 正直なところ、現在(2018年)では中々厳しいと思います
+かなり昔、15年程前であれば大小限らずどこの企業さんもWebサイトを作ろうとしていました。
+またTVCMや紙媒体よりも費用が安くすむ事で需要が高まっていた時代でもありました。
+そんな時代であれば、いくらでもお仕事はあったと思います。（危険な事も多かっただろうけど）
+ただ現在はWebサイト制作の需要も下がっているのが現実です。 そんな今でもマークアップだけのお仕事はあるにはあるでしょうが、制作会社などの正社員になるには、それだけでは厳しいかもしれません。 ましてや、未経験でフリーランスや副業と言うのも現実的ではありません。
+なので、現在勉強中の方やこれからWeb業界を目指す人は
+ 「HTML/CSSとjQueryが出来れば就職出来ます！！」 「フリーランスでもお仕事がいっぱいあります！！」  なんて甘い言葉は鵜呑みにせず、地道に下済みからWebの経験を積んでいただきたいと思います。
+ただ、先程は正社員の道は厳しいと書きましたが、学生さんであればインターンで経験を積んでからの採用はあるでしょうし、学生さんで無くてもポテンシャル採用で募集をかけている企業もあります。
+後者の場合、中途でももちろんお給料は期待できませんが育てる事を前提にしているのでやる気を見て採用してもられる可能性はあります。
+それでもマークアップは重要 マークアップだけではお仕事をするのは難しいと先程は書かせて頂きました。
+じゃ、マークアップなんて真面目にやる必要が無い　なんて思ってしまうかもしれません。
+もし、あなたの目指すべきところが以下のいずれかだとしましょう
+ JavaScriptなどを扱うフロントエンドエンジニア デザインをメインでおこうなうWebデザイナ サーバーサイドのエンジニア  上記のどれを選んでも実際のところHTMLとCSSの深い理解と知識は必要になります。
+現在のHTMLとCSSは主要なブラウザのシェア争うも落ち着いていますし、それぞれの仕様や表示の誤差も落ち着いているため、単にマークアップを行い表示させるだけであれば、簡単な事かもしれません。
+しかし
+ メンテナンス性 汎用性  を考えた設計力はこれまで必要で、それが考えられていないと、運用する場合に誰かが痛い目に合う事になる。 その場凌ぎの適当なマークアップはトラブルの温床で誰も幸せにはしません。
+マークアップエンジニアでも無いのになぜ？ と思うかもしれません。
+確かにマークアップを担当するマークアップエンジニアが常駐していればあまり意識する必要は無いのかもしれません。
+しかし先程、述べた様に、マークアップエンジニアはお仕事としてはやっていくのは難しくなってきました。
+その反面、これまで以上に他の職種の人にマークアップのスキルが求められる場面が増えて行きます。
+余談 少し前から久しぶりにWebのお仕事をする様になって、たの方のコードを見る機会があったのですが、残念な事にマークアップが杜撰なソースコードを多く見つけました。
+諸々に事情はあるのでしょうが、マークアップが相変わらず軽視されている現実に少し悲しくなりました。
+マークアップエンジニア(コーダー)に必要なプラスα 先ほども書いた通り、ブラウザの誤差などが落ち着いた事もあり、現在はマークアップだけを専門に行うマークアップエンジニア(コーダー)でやって行くのは厳しいかもしれません。"/>
+  
+    <meta name="twitter:site" content="@3panda"/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@3panda"/>
+  
+
+
+
+		
+		<meta name="author" content="3panda">
+		<meta name="description" content="ノージャンルでダラダラ書きます。思った事とか">
+		<meta name="generator" content="Hugo 0.42.2" />
+		<title>マークアップの事とかマークアップエンジニア(コーダー)でご飯が食べれるのかとかそんな話 &middot; 3panda</title>
+		<link rel="shortcut icon" href="https://3panda.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://3panda.github.io/css/style.css">
+		<link rel="stylesheet" href="https://3panda.github.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://3panda.github.io/css/font-awesome.min.css">
+		
+
+		
+		<link href="https://3panda.github.io/index.xml" rel="alternate" type="application/rss+xml" title="3panda" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://3panda.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://3panda.github.io/posts'>Archive</a>
+	<a href='https://3panda.github.io/tags'>Tags</a>
+	<a href='https://3panda.github.io/about'>About</a>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLScwSTE25m2hve8s0VNAoFb__Jm_zabP7Snh1kn5b3Ri2_x1pw/viewform'>お問い合わせ</a>
+	
+
+	
+	<a class="cta" href="https://3panda.github.io/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        マークアップの事とかマークアップエンジニア(コーダー)でご飯が食べれるのかとかそんな話
+                    </h1>
+                    <h2 class="headline">
+                    Aug 20, 2018 09:43
+                    · 94 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://3panda.github.io/tags/%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E8%80%83%E3%81%88">個人的な考え</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#誰に読んで欲しい">誰に読んで欲しい</a></li>
+<li><a href="#何様が語るのか">何様が語るのか</a></li>
+<li><a href="#マークアップエンジニアについて改めて">マークアップエンジニアについて改めて</a></li>
+<li><a href="#マークアップエンジニア-コーダー-でご飯を食べれるのか">マークアップエンジニア(コーダー)でご飯を食べれるのか</a></li>
+<li><a href="#それでもマークアップは重要">それでもマークアップは重要</a>
+<ul>
+<li><a href="#余談">余談</a></li>
+</ul></li>
+<li><a href="#マークアップエンジニア-コーダー-に必要なプラスα">マークアップエンジニア(コーダー)に必要なプラスα</a></li>
+<li><a href="#結論">結論</a></li>
+</ul></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h2 id="誰に読んで欲しい">誰に読んで欲しい</h2>
+
+<ul>
+<li>これからWeb業界に入ろうとする人</li>
+<li>現在スクールで勉強している人</li>
+</ul>
+
+<h2 id="何様が語るのか">何様が語るのか</h2>
+
+<p>私は元々はWebデザイナーのアシスタントの様な事から始まり、Web標準の時代になって分業が進んだ時代にマークアップエンジニアとしてHTMLとCSSを専門にお仕事をしていました。</p>
+
+<p>その後、Web2.0とかAjaxとかの時代でjQueryも触る様になって、ちょっとした動きをつけたり組んでいました。</p>
+
+<p>個人的にはjQueryよりも生のJavaScriptを触るのが好きで、可能な限りはjQueryは避けていましたがスケジュールの都合とかでjQueryを使わざる得ない事も多かったです。</p>
+
+<p>その後に色々と経て、モバイルゲームエンジニアになりC#(Unityに限定だけど)を書く様になって、本格的なプログラミングをする様になりました。</p>
+
+<h2 id="マークアップエンジニアについて改めて">マークアップエンジニアについて改めて</h2>
+
+<p>HTMLの正式な名称がHyperText Markup Language（ハイパーテキスト マークアップ ランゲージ)である事からHTMLを組む事（付随してCSSでデザインも定義する事）をマークアップと言い、それを行う人をマークアップエンジニアと呼ぶ事があります。</p>
+
+<p>コーダーと言う言い方の方が昔からありますが、Tableレイアウトの時代のデザインをただWebブラウザ再現する時代の言い方で個人的にはあまり好きではありません。</p>
+
+<p>また</p>
+
+<p><strong>「HTMLとCSSを書いているだけでエンジニアと名乗るな！」</strong></p>
+
+<p>など言っている人もしますが <strong>エンジニアとは技術者の事を指す言葉</strong> である為、何も間違ってはいないと思います。</p>
+
+<p><strong>エンジニアとはプログラミングをする人の事を指す言葉</strong>と思われているなら、その方は少し知見が無さすぎでは無いでしょうか。</p>
+
+<p>まぁ、そんな人は無視しておきましょう。</p>
+
+<h2 id="マークアップエンジニア-コーダー-でご飯を食べれるのか">マークアップエンジニア(コーダー)でご飯を食べれるのか</h2>
+
+<p>正直なところ、現在(2018年)では中々厳しいと思います</p>
+
+<p>かなり昔、15年程前であれば大小限らずどこの企業さんもWebサイトを作ろうとしていました。<br />
+またTVCMや紙媒体よりも費用が安くすむ事で需要が高まっていた時代でもありました。<br />
+そんな時代であれば、いくらでもお仕事はあったと思います。（危険な事も多かっただろうけど）</p>
+
+<p>ただ現在はWebサイト制作の需要も下がっているのが現実です。
+ そんな今でもマークアップだけのお仕事はあるにはあるでしょうが、制作会社などの正社員になるには、それだけでは厳しいかもしれません。  ましてや、<strong>未経験でフリーランスや副業</strong>と言うのも現実的ではありません。</p>
+
+<p>なので、現在勉強中の方やこれからWeb業界を目指す人は</p>
+
+<ul>
+<li>「HTML/CSSとjQueryが出来れば就職出来ます！！」</li>
+<li>「フリーランスでもお仕事がいっぱいあります！！」</li>
+</ul>
+
+<p>なんて甘い言葉は鵜呑みにせず、地道に下済みからWebの経験を積んでいただきたいと思います。</p>
+
+<p>ただ、先程は正社員の道は厳しいと書きましたが、学生さんであればインターンで経験を積んでからの採用はあるでしょうし、学生さんで無くてもポテンシャル採用で募集をかけている企業もあります。</p>
+
+<p>後者の場合、中途でももちろんお給料は期待できませんが育てる事を前提にしているのでやる気を見て採用してもられる可能性はあります。</p>
+
+<h2 id="それでもマークアップは重要">それでもマークアップは重要</h2>
+
+<p>マークアップだけではお仕事をするのは難しいと先程は書かせて頂きました。<br />
+じゃ、<strong>マークアップなんて真面目にやる必要が無い</strong>　なんて思ってしまうかもしれません。</p>
+
+<p>もし、あなたの目指すべきところが以下のいずれかだとしましょう</p>
+
+<ul>
+<li>JavaScriptなどを扱うフロントエンドエンジニア</li>
+<li>デザインをメインでおこうなうWebデザイナ</li>
+<li>サーバーサイドのエンジニア</li>
+</ul>
+
+<p>上記のどれを選んでも実際のところHTMLとCSSの深い理解と知識は必要になります。</p>
+
+<p>現在のHTMLとCSSは主要なブラウザのシェア争うも落ち着いていますし、それぞれの仕様や表示の誤差も落ち着いているため、単にマークアップを行い表示させるだけであれば、簡単な事かもしれません。</p>
+
+<p>しかし</p>
+
+<ul>
+<li>メンテナンス性</li>
+<li>汎用性</li>
+</ul>
+
+<p>を考えた<strong>設計力</strong>はこれまで必要で、それが考えられていないと、運用する場合に誰かが痛い目に合う事になる。
+その場凌ぎの適当なマークアップはトラブルの温床で誰も幸せにはしません。</p>
+
+<p>マークアップエンジニアでも無いのになぜ？  と思うかもしれません。<br />
+確かにマークアップを担当するマークアップエンジニアが常駐していればあまり意識する必要は無いのかもしれません。</p>
+
+<p>しかし先程、述べた様に、マークアップエンジニアはお仕事としてはやっていくのは難しくなってきました。</p>
+
+<p>その反面、これまで以上に他の職種の人にマークアップのスキルが求められる場面が増えて行きます。</p>
+
+<h3 id="余談">余談</h3>
+
+<p>少し前から久しぶりにWebのお仕事をする様になって、たの方のコードを見る機会があったのですが、残念な事にマークアップが杜撰なソースコードを多く見つけました。</p>
+
+<p>諸々に事情はあるのでしょうが、マークアップが相変わらず軽視されている現実に少し悲しくなりました。</p>
+
+<h2 id="マークアップエンジニア-コーダー-に必要なプラスα">マークアップエンジニア(コーダー)に必要なプラスα</h2>
+
+<p>先ほども書いた通り、ブラウザの誤差などが落ち着いた事もあり、現在はマークアップだけを専門に行うマークアップエンジニア(コーダー)でやって行くのは厳しいかもしれません。</p>
+
+<p>おそらく現在、<strong>マークアップエンジニア</strong>を名乗られている方は <strong>プラスα</strong> をお持ちなのだと思います。</p>
+
+<ul>
+<li>デザイン</li>
+<li>プランニング</li>
+<li>ディレクション</li>
+<li>プログラミング
+etc</li>
+</ul>
+
+<p>長くなるのでデザインの話だけに絞ります。</p>
+
+<p>デザインが <strong>プラスα</strong> であればそれはもはや<strong>Webデザイナ</strong>さんなのかもしれません。<br />
+しかしデザインが出来てマークアップに長けてい人は強いと思います。</p>
+
+<p>何より、マークアップを理解している人のデザインは情報が整理されていて完成度が高い。<br />
+実際にマークアップをしないにしても、Webサイト（サービスやアプリケーションも）の情報を整えているわけですからその理解のある無しは大きいはずです。</p>
+
+<p>これからWeb業界に入ろうとされる方、現在勉強中の方はこの <strong>プラスα</strong> も踏まえてHTMLとCSS(後、jQueryとか)を習得して頂きたいです。</p>
+
+<p>その上で目指すべきものを考えていけば、厳しい道のりですが仕事としてやっていけるのでは無いかと思います。</p>
+
+<h2 id="結論">結論</h2>
+
+<p>今回の結論としてはこんな感じです。</p>
+
+<ul>
+<li>HTML/CSS(+ jQuery)でご飯を食べるのは難しい</li>
+<li>プラスαがあれば可能性が広がる</li>
+<li>でもWebをやっている以上はマークアップは重要</li>
+</ul>
+
+<p>昨日、とあるフロントエンドエンジニアを名乗る人のマークアップを軽視している発言を発見し、今日はこんな記事を書いてみました。</p>
+
+<p>昨晩は頭に血が上っていましたが、よくよく内容を読むと、おそらくその発言主と私の考えは半分くらいは同じだと思います。鵜呑みにしては行けないところとか</p>
+
+<p>ただ、マークアップについての見識は全く違う様です。<br />
+その点は非常に残念ですが仕方ありません。</p>
+
+<p>今回の記事を読んで、これから <strong>Web業界に入ろうと考えている人</strong>また<strong>現在勉強中の方</strong>がこの先でどんな職種を選択されてもマークアップを軽視せずに取り組んで頂ければ幸いです。</p>
+
+<p>選んだ正解がWebである以上、HTMLとCSSは必ずついて回りますので。</p>
+
+<p>それでは</p>
+
+                </section>
+            </article>
+
+            
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f3panda.github.io%2fposts%2f20180820%2f - %e3%83%9e%e3%83%bc%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e3%81%ae%e4%ba%8b%e3%81%a8%e3%81%8b%e3%83%9e%e3%83%bc%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%28%e3%82%b3%e3%83%bc%e3%83%80%e3%83%bc%29%e3%81%a7%e3%81%94%e9%a3%af%e3%81%8c%e9%a3%9f%e3%81%b9%e3%82%8c%e3%82%8b%e3%81%ae%e3%81%8b%e3%81%a8%e3%81%8b%e3%81%9d%e3%82%93%e3%81%aa%e8%a9%b1 by @3panda"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/3panda">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/3panda">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> 3panda
+    
+    </p>
+    <p class="small">
+      Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://3panda.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://3panda.github.io/js/main.js"></script>
+<script src="https://3panda.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-762460-6', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+    </body>
+</html>
