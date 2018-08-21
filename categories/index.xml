@@ -6,10 +6,38 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 20 Aug 2018 09:43:20 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 09:51:47 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>個人的なアウトプットのゆるいルール</title>
+      <link>https://3panda.github.io/posts/20180821/</link>
+      <pubDate>Tue, 21 Aug 2018 09:51:47 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180821/</guid>
+      <description>ルールと書くと大げさですが、自分のアウトプットのやり方を自己分析してみました。
+アウトプットの種類 現在の自分のアウトプットの種類です。
+ 思った事とか考え 技術的なメモとか記録 作ったものコード  アウトプットの先 種類の対してアウトプット先
+ BLOG(ここ) Gist GitHub  BLOG(ここ) BLOGは現在進行形でご覧いただいている、こちらになります。
+主に思った事とか考えを書き出す場にしています。
+何かのテーマで色々と考えるのに私はSNSで一人ブレストをするのですが、
+それがある程度、纏まったら、それをさらに整理して、記録する場がこちらになります。
+GIST Gistは技術的なメモがメインです。
+技術的なメモ
+と書くとなんかすごくカッコイイのですが、本当のところは自分用の忘備録です。
+また、以前はBLOGの代わりもしていました。
+GitHub GitHubは実際に作ったコードを載せています。 アプリケーションやサービスと言えるほどの大したもの載せておりませんが、 設定をすれば動くものが管理されています。(そうじゃ無いものもあります&amp;hellip;)
+概ね解説はREADMEに記載しているのですが、説明が不足している場合はGISTの方で解説を載せる場合もあります。
+最近は主に仕事で使いそうな技術の検証がメインになっています。 その関係で現在(2018/08時点で)はPythonが多いです。
+Pythonは実際には書き出して一年くらいですが&amp;hellip;.
+終わり 個人的なアウトプットのゆるいをご紹介しました。
+皆さんもどうぞご参考に&amp;hellip;.なんて上から目線で言える程の内容でも無いのですが
+「そんな風にやってるんだ」
+くらいに覗いて頂ければ幸いです。
+それでは</description>
+    </item>
     
     <item>
       <title>マークアップの事とかマークアップエンジニア(コーダー)でご飯が食べれるのかとかそんな話</title>
