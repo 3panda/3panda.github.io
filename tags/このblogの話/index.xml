@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>このblogの話 on 3panda</title>
+    <link>https://3panda.github.io/tags/%E3%81%93%E3%81%AEblog%E3%81%AE%E8%A9%B1/</link>
+    <description>Recent content in このblogの話 on 3panda</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 24 Aug 2018 07:02:42 +0900</lastBuildDate>
+    
+	<atom:link href="https://3panda.github.io/tags/%E3%81%93%E3%81%AEblog%E3%81%AE%E8%A9%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>このBLOGのこれから</title>
+      <link>https://3panda.github.io/posts/20180824/</link>
+      <pubDate>Fri, 24 Aug 2018 07:02:42 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180824/</guid>
+      <description>先月頭から生活が変わった（会社勤めしなくなった）事をきっかけに始めたこのBLOGですが、 とりあえず今日まで平日は記事を書き続ける事ができています。
+過去の失敗を分析 過去にBLOGを立ち上げたが続かずに失敗を繰り返していました。 なぜそうなったのかを分析
+ BLOGの環境を構築して満足してしまった 記事の内容にこだわり過ぎてなかなか書けない 書く習慣をつける事が出来なかった  分析から考えた方針 失敗の分析からこのBLOGを続けるために考えた方針
+ 第一の目標は 平日は毎日更新する事 先ずは内容に拘らないでとにかく書く ある程度の誤字脱字は後から直してもOK 最終手段でその日更新出来なかったら別の日にまとめて更新する 続ける事が最優先なのでこの方針に無理があったら変更を検討する  方針に沿って続けた結果 冒頭に書きました通り、なんとか今日まで続けております。 方針はぼんやり考えていた事ですが、今日を機この方針に沿ってやっていこうと思います。
+これから まずは今月一杯、このペースで書き続けられたら以下を実施しようと思っています。
+ 独自ドメインを割り当てる 広告を載せる(Google AdSense)  独自ドメインを割り当てる もともと独自ドメインは随分前から取得しているんですが、色々と手違いでこのBLOGにすぐには適用出来ない状態になっています。
+ほんの少しですが費用が掛かる状態なので、
+「書き続けられそうだったらやろう」
+と後回しにしてきました。
+今月も平日の更新をこのペースでやりきれたら、重い腰をあげて独自ドメインに設定に乗り出そうと思います。
+広告を載せる(Google AdSense) 当然ですが、このBLOGの広告収入で生活しようとかは考えていません。
+Google AdSenseの実際を知りたいという興味本位なので広告が出まくるような読みにくいものにはしないつもりです。
+その辺をやりながら考えるのも勉強になると考えています。
+終わりに BLOGと言う形に残るアウトプットを続ける必要性を感じながらもずーとやってこなかったのですが、おそらくそれは私が 本心で必要 だと思っていなかったのだと思います。
+図らずもフリーランスとなった今、ようやく必要に思えたので今後も無理の無いペースで続けていこうと思います。
+それでは</description>
+    </item>
+    
+  </channel>
+</rss>
