@@ -6,10 +6,37 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 27 Sep 2018 07:12:47 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 07:06:49 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>タイトルを考えずに書き出して気づいた事</title>
+      <link>https://3panda.github.io/posts/20180928/</link>
+      <pubDate>Fri, 28 Sep 2018 07:06:49 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20180928/</guid>
+      <description>タイトルは後付けで考えることが多いです。
+なぜかって言いますと、このBLOGの書き方が頭に思いついた事を
+とりあえず書き出し、そして調整するからです。
+これで調整しているのか？
+と思われると思いますが、やっています。一応は&amp;hellip;
+もちろん、最初からバチっとタイトルが決まっている事もあります。
+Gistの方に書いている技術系の内容は概ね先にタイトルが決まっています。
+殆どが技術の備忘録なので目的が明確だからかもしれません。
+このBLOGで書いている記事は、冒頭に書きました通り、自分の頭の中に浮かんだ事を書き出しています。
+なので最初は未整理の状態です。
+頭からテキストエディターの上に書き出し、また目で見て頭に入れる
+書いていて思ったのですがこれって面白いですね。
+自分が頭で考えた事を回り回ってまた頭に戻している
+人間はこうして考えや思いを循環させて整理をつける生き物なのかもしれません。
+多分これは耳でも同じことが言えて頭の中の考えを声に出し、耳で聞いてまた頭に戻す
+これで整理されるのかもしれません。
+頭で考え過ぎは良くないと良く言われますが、考えた事を外に出し、そしてまた入れる作業をすることで、考えは磨かれるのかもしれません。
+何も考えずに書き出した記事で思いの外におもしろい事に気づけました。
+それでは</description>
+    </item>
     
     <item>
       <title>仕事は結果、人付き合いは過程</title>
