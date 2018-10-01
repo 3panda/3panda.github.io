@@ -6,10 +6,54 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 28 Sep 2018 07:06:49 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 01 Oct 2018 22:58:56 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TypeScriptなのかBabelなのか、なんかそんなはなし</title>
+      <link>https://3panda.github.io/posts/20181001/</link>
+      <pubDate>Mon, 01 Oct 2018 22:58:56 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20181001/</guid>
+      <description>二、三年振りにWebのフロントのお仕事をするようになって、新規のアプリケーション開発に限ればですが、ReactやVueと行ったライブラリを使うのが標準と個人的には思っています。
+そしてお仕事で請け負う場合に条件として挙げられる事が多いのは
+React(又はVue) + TypeScript
+ライブラリーと一緒にTypeScriptの利用です。
+React(又はVue) + TypeScriptが選ばれる理由 理由としては大きくはこの二点
+ 古いJavaScriptへの対応(古いブラウザへの対応) 静的型付けで開発出来る  古いJavaScriptへの対応(古いブラウザへの対応) まずは単純にES6に対応していないブラウザを対象にする場合 なんらかの方法でES5に書き換える必要があるためです。
+この解決方法には現在はTypeScriptかBabelを選択するケースが多いかと考えます。
+昔は色々ありましたが割愛します。
+気になる人はAltJSとかでググってください。
+BabelとTypeScriptの違い  Babelはトランスパイラ
+ TypeScriptはAltJS  Babelはトランスパイラです。
+簡単に言うと新しい文法を使ったソースコードを古い文法のコードに書き換えてくれるも変換ツールです。
+TypeScriptとはAltJSです。
+AltJSはその名の通りJavaScriptの代替言語でコンパイルするとJavaScriptに書き出されます。設定で古いJavaScriptにする事が出来ます。もちろんES6にも
+静的型付けで開発出来る TypeScriptは静的型付けの言語です。
+静的型付け、つまりは変数や関数の引数や戻り値に型を指定する事が出来る。
+他の静的型付け言語の使用感に近い状態で開発が出来ると言われています。
+JavaScriptで静的型付けは個人的には違和感があった ただ私は静的型付けへの拘りには違和感がありました。
+私は元々がWebのフロントで、直近で三年くらいUnityを触っていたのでC#を書いていました。
+ですので、動的型付けであるJavaScriptも静的型付け(C#で)も経験しています。
+元々動的型付けに慣れている身としては、TypeScriptで静的型付けをする意味が理解出来ませんでした。
+「型の無い言語なんて触りたくない」
+への（型が無いのではなく動的だ!）反発もあり
+ 動的型付けである事を想定して開発すれば良いのでは？ Babelを使ってES6の記述で開発する方が良いのでは？  そんな思いが強くありました。
+もちろんTypeScriptは優れた言語だと思います。
+だたJavaScriptに慣れていないエンジニアのために、静的型付けでの開発が慣れていると言う理由だけで利用するのにはどうも違和感があったのです。
+静的型付けで開発する必要性や事情が見えてきた しかし、いろいろな人と話して少し考え方が変わりました。
+大きなWebシステムでの開発事例を聞いたり、私自身も関わって行く中でJavaScriptにはかなり重大な危険性がある事を再認識したからです。
+JavaScriptの重大な危険性 JavaScriptをはじめとしたWebのフロントエンド技術の最大の利点は
+簡単に開発が出来る事です。
+これは言語の難易度とかそう言う事では無くて、実行環境だったりそんな話です。
+昨今はWebpackなどのモジュールバンドラの利用が必須ですが、それでも他の言語に比べて開発環境を用意しやすく、開発が簡単に始められるかと思います。
+ただ、その簡単さが重大な危険性 である事を再認識しました。
+ 簡単が故に乱れやすく、崩れやすい 崩れやすいが故にトラブルを起こしやすい  ルールの厳守は難しい これらを防止するために、厳格なルールを設けて厳守すると言う手立てもあります。 ただ開発メンバー全員がよほど 強い意志 で臨まない限り、ルールを守るのは困難です。
+何故ならルールを破っても開発は可能※だからです。
+そんな状態で例えば納期が迫っていたら、</description>
+    </item>
     
     <item>
       <title>タイトルを考えずに書き出して気づいた事</title>

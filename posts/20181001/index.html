@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://3panda.github.io/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="TypeScriptなのかBabelなのか、なんかそんなはなし"/>
+  <meta name="twitter:description" content="二、三年振りにWebのフロントのお仕事をするようになって、新規のアプリケーション開発に限ればですが、ReactやVueと行ったライブラリを使うのが標準と個人的には思っています。
+そしてお仕事で請け負う場合に条件として挙げられる事が多いのは
+React(又はVue) &#43; TypeScript
+ライブラリーと一緒にTypeScriptの利用です。
+React(又はVue) &#43; TypeScriptが選ばれる理由 理由としては大きくはこの二点
+ 古いJavaScriptへの対応(古いブラウザへの対応) 静的型付けで開発出来る  古いJavaScriptへの対応(古いブラウザへの対応) まずは単純にES6に対応していないブラウザを対象にする場合 なんらかの方法でES5に書き換える必要があるためです。
+この解決方法には現在はTypeScriptかBabelを選択するケースが多いかと考えます。
+昔は色々ありましたが割愛します。
+気になる人はAltJSとかでググってください。
+BabelとTypeScriptの違い  Babelはトランスパイラ
+ TypeScriptはAltJS  Babelはトランスパイラです。
+簡単に言うと新しい文法を使ったソースコードを古い文法のコードに書き換えてくれるも変換ツールです。
+TypeScriptとはAltJSです。
+AltJSはその名の通りJavaScriptの代替言語でコンパイルするとJavaScriptに書き出されます。設定で古いJavaScriptにする事が出来ます。もちろんES6にも
+静的型付けで開発出来る TypeScriptは静的型付けの言語です。
+静的型付け、つまりは変数や関数の引数や戻り値に型を指定する事が出来る。
+他の静的型付け言語の使用感に近い状態で開発が出来ると言われています。
+JavaScriptで静的型付けは個人的には違和感があった ただ私は静的型付けへの拘りには違和感がありました。
+私は元々がWebのフロントで、直近で三年くらいUnityを触っていたのでC#を書いていました。
+ですので、動的型付けであるJavaScriptも静的型付け(C#で)も経験しています。
+元々動的型付けに慣れている身としては、TypeScriptで静的型付けをする意味が理解出来ませんでした。
+「型の無い言語なんて触りたくない」
+への（型が無いのではなく動的だ!）反発もあり
+ 動的型付けである事を想定して開発すれば良いのでは？ Babelを使ってES6の記述で開発する方が良いのでは？  そんな思いが強くありました。
+もちろんTypeScriptは優れた言語だと思います。
+だたJavaScriptに慣れていないエンジニアのために、静的型付けでの開発が慣れていると言う理由だけで利用するのにはどうも違和感があったのです。
+静的型付けで開発する必要性や事情が見えてきた しかし、いろいろな人と話して少し考え方が変わりました。
+大きなWebシステムでの開発事例を聞いたり、私自身も関わって行く中でJavaScriptにはかなり重大な危険性がある事を再認識したからです。
+JavaScriptの重大な危険性 JavaScriptをはじめとしたWebのフロントエンド技術の最大の利点は
+簡単に開発が出来る事です。
+これは言語の難易度とかそう言う事では無くて、実行環境だったりそんな話です。
+昨今はWebpackなどのモジュールバンドラの利用が必須ですが、それでも他の言語に比べて開発環境を用意しやすく、開発が簡単に始められるかと思います。
+ただ、その簡単さが重大な危険性 である事を再認識しました。
+ 簡単が故に乱れやすく、崩れやすい 崩れやすいが故にトラブルを起こしやすい  ルールの厳守は難しい これらを防止するために、厳格なルールを設けて厳守すると言う手立てもあります。 ただ開発メンバー全員がよほど 強い意志 で臨まない限り、ルールを守るのは困難です。
+何故ならルールを破っても開発は可能※だからです。
+そんな状態で例えば納期が迫っていたら、"/>
+  
+    <meta name="twitter:site" content="@3panda"/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@3panda"/>
+  
+
+
+
+		
+		<meta name="author" content="3panda">
+		<meta name="description" content="ノージャンルでダラダラ書きます。思った事とか">
+		<meta name="generator" content="Hugo 0.42.2" />
+		<title>TypeScriptなのかBabelなのか、なんかそんなはなし &middot; 3panda</title>
+		<link rel="shortcut icon" href="https://3panda.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://3panda.github.io/css/style.css">
+		<link rel="stylesheet" href="https://3panda.github.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://3panda.github.io/css/font-awesome.min.css">
+		
+
+		
+		<link href="https://3panda.github.io/index.xml" rel="alternate" type="application/rss+xml" title="3panda" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://3panda.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://3panda.github.io/posts'>Archive</a>
+	<a href='https://3panda.github.io/tags'>Tags</a>
+	<a href='https://3panda.github.io/about'>About</a>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLScwSTE25m2hve8s0VNAoFb__Jm_zabP7Snh1kn5b3Ri2_x1pw/viewform'>お問い合わせ</a>
+	
+
+	
+	<a class="cta" href="https://3panda.github.io/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        TypeScriptなのかBabelなのか、なんかそんなはなし
+                    </h1>
+                    <h2 class="headline">
+                    Oct 1, 2018 22:58
+                    · 77 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://3panda.github.io/tags/%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E8%80%83%E3%81%88">個人的な考え</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#react-又はvue-typescriptが選ばれる理由">React(又はVue) + TypeScriptが選ばれる理由</a>
+<ul>
+<li><a href="#古いjavascriptへの対応-古いブラウザへの対応">古いJavaScriptへの対応(古いブラウザへの対応)</a>
+<ul>
+<li><a href="#babelとtypescriptの違い">BabelとTypeScriptの違い</a></li>
+</ul></li>
+<li><a href="#静的型付けで開発出来る">静的型付けで開発出来る</a></li>
+</ul></li>
+<li><a href="#javascriptで静的型付けは個人的には違和感があった">JavaScriptで静的型付けは個人的には違和感があった</a></li>
+<li><a href="#静的型付けで開発する必要性や事情が見えてきた">静的型付けで開発する必要性や事情が見えてきた</a>
+<ul>
+<li><a href="#javascriptの重大な危険性">JavaScriptの重大な危険性</a></li>
+<li><a href="#ルールの厳守は難しい">ルールの厳守は難しい</a></li>
+<li><a href="#typescriptを利用する利点">TypeScriptを利用する利点</a></li>
+</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
+</ul></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<p>二、三年振りにWebのフロントのお仕事をするようになって、新規のアプリケーション開発に限ればですが、ReactやVueと行ったライブラリを使うのが標準と個人的には思っています。</p>
+
+<p>そしてお仕事で請け負う場合に条件として挙げられる事が多いのは</p>
+
+<p><strong>React(又はVue) + TypeScript</strong></p>
+
+<p>ライブラリーと一緒にTypeScriptの利用です。</p>
+
+<h2 id="react-又はvue-typescriptが選ばれる理由">React(又はVue) + TypeScriptが選ばれる理由</h2>
+
+<p>理由としては大きくはこの二点</p>
+
+<ol>
+<li>古いJavaScriptへの対応(古いブラウザへの対応)</li>
+<li>静的型付けで開発出来る</li>
+</ol>
+
+<h3 id="古いjavascriptへの対応-古いブラウザへの対応">古いJavaScriptへの対応(古いブラウザへの対応)</h3>
+
+<p>まずは単純にES6に対応していないブラウザを対象にする場合
+なんらかの方法でES5に書き換える必要があるためです。</p>
+
+<p>この解決方法には現在はTypeScriptかBabelを選択するケースが多いかと考えます。</p>
+
+<p>昔は色々ありましたが割愛します。<br />
+気になる人はAltJSとかでググってください。</p>
+
+<h4 id="babelとtypescriptの違い">BabelとTypeScriptの違い</h4>
+
+<ul>
+<li>Babelはトランスパイラ<br /></li>
+<li>TypeScriptはAltJS</li>
+</ul>
+
+<p>Babelはトランスパイラです。<br />
+簡単に言うと新しい文法を使ったソースコードを古い文法のコードに書き換えてくれるも変換ツールです。</p>
+
+<p>TypeScriptとはAltJSです。<br />
+AltJSはその名の通りJavaScriptの代替言語でコンパイルするとJavaScriptに書き出されます。設定で古いJavaScriptにする事が出来ます。もちろんES6にも</p>
+
+<h3 id="静的型付けで開発出来る">静的型付けで開発出来る</h3>
+
+<p>TypeScriptは静的型付けの言語です。</p>
+
+<p>静的型付け、つまりは変数や関数の引数や戻り値に型を指定する事が出来る。<br />
+他の静的型付け言語の使用感に近い状態で開発が出来ると言われています。</p>
+
+<h2 id="javascriptで静的型付けは個人的には違和感があった">JavaScriptで静的型付けは個人的には違和感があった</h2>
+
+<p>ただ私は静的型付けへの拘りには違和感がありました。</p>
+
+<p>私は元々がWebのフロントで、直近で三年くらいUnityを触っていたのでC#を書いていました。</p>
+
+<p>ですので、動的型付けであるJavaScriptも静的型付け(C#で)も経験しています。</p>
+
+<p>元々動的型付けに慣れている身としては、TypeScriptで静的型付けをする意味が理解出来ませんでした。</p>
+
+<p><strong>「型の無い言語なんて触りたくない」</strong></p>
+
+<p>への（<strong>型が無いのではなく動的だ!</strong>）反発もあり</p>
+
+<ul>
+<li>動的型付けである事を想定して開発すれば良いのでは？</li>
+<li>Babelを使ってES6の記述で開発する方が良いのでは？</li>
+</ul>
+
+<p>そんな思いが強くありました。</p>
+
+<p>もちろんTypeScriptは優れた言語だと思います。<br />
+だたJavaScriptに慣れていないエンジニアのために、静的型付けでの開発が慣れていると言う理由だけで利用するのにはどうも違和感があったのです。</p>
+
+<h2 id="静的型付けで開発する必要性や事情が見えてきた">静的型付けで開発する必要性や事情が見えてきた</h2>
+
+<p>しかし、いろいろな人と話して少し考え方が変わりました。<br />
+大きなWebシステムでの開発事例を聞いたり、私自身も関わって行く中でJavaScriptにはかなり重大な危険性がある事を再認識したからです。</p>
+
+<h3 id="javascriptの重大な危険性">JavaScriptの重大な危険性</h3>
+
+<p>JavaScriptをはじめとしたWebのフロントエンド技術の最大の利点は<br />
+<strong>簡単に開発が出来る事</strong>です。<br />
+これは<strong>言語の難易度とかそう言う事では無くて、実行環境</strong>だったりそんな話です。</p>
+
+<p>昨今はWebpackなどのモジュールバンドラの利用が必須ですが、それでも他の言語に比べて<strong>開発環境を用意しやすく、開発が簡単に始められる</strong>かと思います。</p>
+
+<p>ただ、<strong>その簡単さが重大な危険性</strong> である事を再認識しました。</p>
+
+<ul>
+<li>簡単が故に乱れやすく、崩れやすい</li>
+<li>崩れやすいが故にトラブルを起こしやすい</li>
+</ul>
+
+<h3 id="ルールの厳守は難しい">ルールの厳守は難しい</h3>
+
+<p>これらを防止するために、<strong>厳格なルールを設けて厳守する</strong>と言う手立てもあります。
+ただ開発メンバー全員がよほど <strong>強い意志</strong> で臨まない限り、<strong>ルールを守るのは困難</strong>です。</p>
+
+<p>何故なら<strong>ルールを破っても開発は可能</strong>※だからです。</p>
+
+<p>そんな状態で例えば納期が迫っていたら、</p>
+
+<ul>
+<li>エラーにならなければ、今は大丈夫</li>
+<li>とにかく動いていれば、今は大丈夫</li>
+</ul>
+
+<p>ect、</p>
+
+<p>と<strong>問題の先送り</strong>を産みやすくなります。</p>
+
+<p>そして、大抵の場合<strong>これらの問題は後々に影響</strong>を及ぼします。</p>
+
+<p>※もちろん、ESLintなどを使って厳しく開発をする事も可能です。</p>
+
+<h3 id="typescriptを利用する利点">TypeScriptを利用する利点</h3>
+
+<p>TypeScriptを利用すると、少なからず<strong>型の定義をすると言うルールを設ける事</strong>が出来ます。</p>
+
+<p>そして、この<strong>ルールは破る事が出来ません。</strong><br />
+何故なら型がおかしい場合はエラーになり、開発が止まるためです。</p>
+
+<p>たったこれだけでも、<strong>ある程度のソースの乱れは抑制され、壊れにくいコードを書く事ができる</strong>と思います。</p>
+
+<p><strong>結果として後々にトラブルを残す危険性が減少</strong>します。</p>
+
+<p>当然ですが、<strong>0には出来ませんが減少するのでやる価値はある</strong>と思います。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>決局のところ、<strong>大きな開発でなければ無理にTypeScriptを使用する必要性は無い</strong>のかもしれません。</p>
+
+<p>逆に<strong>それほど規模が大きくなく、且つ短いスパンで再開発をするようなプロジェクト</strong>であれば、<strong>Babelを使ってES6でも良いのでは</strong>と個人的には考えます。</p>
+
+<p>それでは</p>
+
+                </section>
+            </article>
+
+            
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f3panda.github.io%2fposts%2f20181001%2f - TypeScript%e3%81%aa%e3%81%ae%e3%81%8bBabel%e3%81%aa%e3%81%ae%e3%81%8b%e3%80%81%e3%81%aa%e3%82%93%e3%81%8b%e3%81%9d%e3%82%93%e3%81%aa%e3%81%af%e3%81%aa%e3%81%97 by @3panda"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/3panda">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/3panda">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> 3panda
+    
+    </p>
+    <p class="small">
+      Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://3panda.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://3panda.github.io/js/main.js"></script>
+<script src="https://3panda.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-762460-6', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+    </body>
+</html>
