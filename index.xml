@@ -6,10 +6,19 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Oct 2018 07:03:15 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 16:56:56 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://3panda.github.io/posts/test/</link>
+      <pubDate>Sun, 14 Oct 2018 16:56:56 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>命を懸けると人は言う</title>
