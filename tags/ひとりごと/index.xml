@@ -6,10 +6,26 @@
     <description>Recent content in ひとりごと on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Oct 2018 07:08:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 07:11:44 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>なにかのはなし</title>
+      <link>https://3panda.github.io/posts/20181019/</link>
+      <pubDate>Fri, 19 Oct 2018 07:11:44 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20181019/</guid>
+      <description>あらゆるプロダクト(Webサイト、Webサービス、アプリケーション、製造物&amp;hellip;etc)には色々な「なに」や「だれ」などなにかが存在します。
+ なに をするためのものか なに が出来るのか なに が出来ない どこ で使うのか だれ が使うのか だれ の為のものか  etc
+あらたに なにか をつくる、すでにある なにかをどうにかする 、仕事をしていると遭遇するこれらの場面で共通して存在し、そして一番見失いがちな事ではないかと思います。
+また、前者はその時点で存在しないもの、後者はその時点ですでに存在しているものであるため、 短期的な目的が異なってくる場合もあり、関わり方が違って行くため別のなにかと感じてしまいます。
+ただ、どちらも共通して言える事は、上手くいっている時は「なに」や「だれ」が明確になっている、 逆に上手くいかずに低迷している時は「なに」や「だれ」が不明確になっている　ように思います。
+私は現在はWebやシステムの開発がお仕事になっていて、新規も既存の何れにも関わる事があります。 仕事をしていて、そのプロジェクトや自身のタスクの進み具合が悪い時は、この「なに」や「だれ」を見失っている時が多いと実感しています。
+そんなときは、もう一度「なに」や「だれ」など 「なにか」についてを考える必要があると、つい最近、実感しましたので、今回の記事にしてみました。
+それでは</description>
+    </item>
     
     <item>
       <title>ただの電車の座席に乗れるかどうかの話を機械学習ぽい話にしてみた</title>
