@@ -6,10 +6,49 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Nov 2018 07:02:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Nov 2018 07:14:34 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>すこしだけ昔の自分の考えを振り返る</title>
+      <link>https://3panda.github.io/posts/20181116/</link>
+      <pubDate>Fri, 16 Nov 2018 07:14:34 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20181116/</guid>
+      <description>2011年
+ ProcessingとArduinoをなんとかHTML5(というかHTMLの未来)に繋げる何かに昇華したい。 HTMLを情報として扱う形にして、ブラウザではないものからのアプローチが・・・・ry) そんな感じ
+ なんだかこれはIotなんじゃ無いのかと思う。 着眼点は良かったんだけど、行動に移せずに頓挫してしまったなぁ&amp;hellip;.
+でも、Processingに出会えたのは良かった。
+ビジュアル表現をプログラミン出来るからプログラミン初心者さんにはすごくお勧めです。
+2012年
+ Web技術の歴史を追っているとWeb2.0って懐かしい言葉が目に止まりました。
+Webの歴史においてこれもまた一つのバズワードでしか無いのだけど提唱されている考えは悪いものではありませんでした。
+Web2.0をすごく噛み砕いて誤解を恐れずに説明すると
+発信者→利用者
+の【一歩通行の流れ】が
+発信者←→利用者
+な【双方向の流れ】に変わった事だと再認識しました。
+つまりそれ以前の一歩通行の仕組みがWeb1.0(なのか1.5なのか？？)
+じゃ今の&amp;rdquo;広義の意味のHTML5&amp;rdquo;とかはWeb3.0なんじゃないのかな？
+←発信者←→SNS←→利用者\\\\\ry)
+もうテキストでは説明出来ないWebのネットワークを振る活用した
+時代の入り口。
+なんてだれか発言力のある人がバズワードとしてのWeb3.0を・・・
+ないな（＾＾；
+ HTML5がWeb3.0って言えるかどうかは、今の自分ではなんとも言えない。
+書いてて思ったのはスマートフォンの登場がある意味Webでも画期的でそこがWeb3.0 と言えば3.0だったのかもしれない。
+モバイルファーストかとかそんな言葉がある意味Web3.0に変わる言葉だと考えると良いのかもしれない。
+もしくはWeb3.0の中の代表的な一つなのかも。
+HTML5は実のところ、言われていた程は見える部分は目立った話では無くて、技術者にとって良い事が増えたことが大きかったのだと思う。
+その後のAIブームとかの流れで、もう誰もHTML5って話題を上げてこないけど、
+その頃イメージされていたものが、現在ようやく現実的なレベルになっていると実感がある。
+あらゆる技術は、もしかしたら世の中で騒がれなくなった時が、一定の成果が出る時なのかもしれないと感じました。
+今回は過去の自分のSNSの発言を振り返り、思うところを書いてみました。
+数年後はこのBLOGでこれをやってみたいと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>無題について</title>
