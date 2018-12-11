@@ -6,10 +6,28 @@
     <description>Recent content in ひとりごと on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 11 Dec 2018 08:18:10 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 07:07:18 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ロボット開発にワクワク</title>
+      <link>https://3panda.github.io/posts/20181212/</link>
+      <pubDate>Wed, 12 Dec 2018 07:07:18 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20181212/</guid>
+      <description>最近、ロボット開発の需要をヒシヒシと感じています。
+コンシューマ向けは言うまでもないですが、ビジネス向け、いわゆるBtoBでもチラホラと
+ちょっとワクワクします。
+まだ私に具体的に何か依頼があったわけでもないのですが、多方面から聞こえてくるので可能性は0とは言い切れなくなってきました。
+産業ロボットなんて自分には無縁と思っていましたが、どうもそうではない気配を感じています。
+そういえば自分には無縁と思っていたゲーム開発もモバイルではありましが、Unity のおかげで仕事として関わる事も出来ました。
+ゲームで言うUnity とはちょっと違いますが、ロボットの開発もオープンソースのロボティクス・ソフトウェア・フレームワーク「Robot Operating System（ROS）」があるそうで、何をする為のものかもまだ、分かってないのですが、ちょっとワクワクするんで触ってみようと思います。
+少しづつ分かって来た深層学習も絡めて何か面白いことが出来たら良いなっと楽しい妄想が膨らんでいきます〜
+やっていった中で覚えたことなんかは、また記事にしたいなと思います。（たぶん）
+それでは</description>
+    </item>
     
     <item>
       <title>満員電車から逃れて</title>
