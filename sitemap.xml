@@ -598,14 +598,14 @@
   </url>
   
   <url>
-    <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2018-12-19T07:08:28+09:00</lastmod>
+    <loc>https://3panda.github.io/tags/</loc>
+    <lastmod>2018-07-02T09:52:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://3panda.github.io/tags/</loc>
-    <lastmod>2018-07-02T09:52:17+09:00</lastmod>
+    <loc>https://3panda.github.io/categories/</loc>
+    <lastmod>2018-12-19T07:08:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -670,14 +670,8 @@
   </url>
   
   <url>
-    <loc>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94/</loc>
-    <lastmod>2018-12-19T07:08:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</loc>
-    <lastmod>2018-12-18T07:10:54+09:00</lastmod>
+    <lastmod>2018-12-19T07:08:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
