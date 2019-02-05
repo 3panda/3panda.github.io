@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://3panda.github.io/posts/20190206/</loc>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://3panda.github.io/posts/20190205/</loc>
     <lastmod>2019-02-05T06:07:55+09:00</lastmod>
   </url>
@@ -740,13 +745,13 @@
   
   <url>
     <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2019-02-05T06:07:55+09:00</lastmod>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/</loc>
-    <lastmod>2019-02-05T06:07:55+09:00</lastmod>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -758,7 +763,7 @@
   
   <url>
     <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2019-02-05T06:07:55+09:00</lastmod>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -770,7 +775,7 @@
   
   <url>
     <loc>https://3panda.github.io/posts/</loc>
-    <lastmod>2019-02-05T06:07:55+09:00</lastmod>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -801,6 +806,12 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%84%E3%81%AF%E3%81%AA%E3%81%97/</loc>
     <lastmod>2018-10-22T07:28:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94/</loc>
+    <lastmod>2019-02-06T06:26:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
