@@ -6,10 +6,49 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 06 Mar 2019 06:20:03 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 07:02:59 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>曖昧さの必要性</title>
+      <link>https://3panda.github.io/posts/20190307/</link>
+      <pubDate>Thu, 07 Mar 2019 07:02:59 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190307/</guid>
+      <description>人間が人間である最大の特徴は何だろう
+私は曖昧さであると思います。
+※以下は全てあくまで個人的な考えですので妄想とでも思って読んでくださいませ。
+計算機は正確な答えを計算出来る
+人は計算機には正確さでは到底勝てない
+でも逆に計算機に曖昧な値を出力させることは難しい
+計算機はそもそも曖昧さを良しとしない
+正確性を求めるものだから
+極論を言うと
+1 + 1 を計算したくて計算機に計算させて
+「多分 2」 と答えが出たら正直困る
+人が計算機に求めるものは
+1 + 1 = 2
+基本的な概念はそのはずである
+故に曖昧さを弾き出す概念は難しい
+最近はその曖昧さを弾き出している
+正しくは曖昧なものを分析し数値と言う形で表現している
+やはり人のそれとは違っているのだろう
+人間以外の動物も曖昧さを持っている
+でも人間ほど複雑には出来ていない
+複雑な仕組みで存在している人間を計算機では現在のところ全てを分析出来ていない
+分析できる日も訪れるのかもしれない
+でもそんな日は来ないかもしれない
+人間は計算機よりも曖昧で時に面倒である
+計算機のような正確性を欲しいとおもう時もある
+でも曖昧さがあるから人間は人間であり
+曖昧な存在であるからそれぞれに違いがある
+その曖昧さから生まれた違いが人の個性であって
+個々の存在意義なんだと思う
+だから曖昧さは人には必要なのかもしれない
+それでは</description>
+    </item>
     
     <item>
       <title>匂いをシェアできるSNSがあったなら</title>
