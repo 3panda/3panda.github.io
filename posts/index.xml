@@ -6,10 +6,39 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 12 Mar 2019 06:29:01 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 06:27:04 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>斬新な技術が生まれて世に広がるまで</title>
+      <link>https://3panda.github.io/posts/20190313/</link>
+      <pubDate>Wed, 13 Mar 2019 06:27:04 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190313/</guid>
+      <description>ある斬新な技術が発表される
+まずは専門的にそれを扱う人たちに広がる
+次にメディアが広げ専門的でない人もそれを知るようになる
+そして、至る所でその技術についての言葉を聞くようになる
+でも往々にして偏った意味として
+次にその技術の謎のコンサルタントが出てくる
+残念ながら名ばかりで報酬に見合った成果を上げてはくれない
+そして、一部でそれの状況に気づく人たちが出てくる
+銀の弾丸ではない&amp;hellip;. 的な記事がたくさん描かれる
+何とかでもわかる&amp;hellip; 的な記事、書籍が販売される
+そんなこんなんで誰もが名前くらいは聞いた事のある存在になる
+そして時が経ち実用的になっていく
+ようやく生活の一部で当たり前のように使われ始める
+その頃にはもうだれもその技術自体を話題にはしなくなる
+それくらい世の中に浸透している
+なんだか不思議な気もするが忘れられるくらい身近になる事
+そうなることが技術としては成功なのかもしれない
+さて、ある技術と書いたそれが現代で言えば何のか？
+幾つか当てはまるものがあるとおもいますが
+それはご想像にお任せしたいと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>プログラミングを勉強すること != プログラマになること</title>
