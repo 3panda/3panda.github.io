@@ -6,10 +6,38 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Apr 2019 06:28:26 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2019 07:16:09 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>便利と危険の距離感</title>
+      <link>https://3panda.github.io/posts/20190415/</link>
+      <pubDate>Mon, 15 Apr 2019 07:16:09 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190415/</guid>
+      <description>身近にあったフィッシングの話
+簡単にパスワードを教えてはいけない
+奴らのやり方は巧妙だ
+小さくはないが大きくもない金額
+被害がわかりにくいやり口
+気付けたのは運が良かった
+サービスのセキュリティは問題ない
+二段階認証も行なっている
+通知もちゃん届いている
+だからすぐに対処出来た
+購入のフローを簡単にするためにidとpassだけで完結出来る仕組み
+結局それを渡しては二段階認証などは無意味
+だから、それを知るための奴らの作戦は巧妙
+大量にフィッシングの罠を送り続ける
+または張り巡らし獲物を狙ている
+便利の代償には危険が伴う
+昔からそれは変わらない
+だから使う人はそれを知る必要がある
+便利と危険は隣合わせであると
+それでは</description>
+    </item>
     
     <item>
       <title>やっていないことはわからない</title>
