@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on 3panda</title>
+    <title>GIT on 3panda</title>
     <link>https://3panda.github.io/tags/git/</link>
-    <description>Recent content in Git on 3panda</description>
+    <description>Recent content in GIT on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 20 Jul 2018 09:40:22 +0900</lastBuildDate>
