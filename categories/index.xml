@@ -6,10 +6,40 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 27 Apr 2019 01:44:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 01:45:28 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>素振り</title>
+      <link>https://3panda.github.io/posts/20190507/</link>
+      <pubDate>Tue, 07 May 2019 01:45:28 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190507/</guid>
+      <description>高校球児では無いですが何事も素振りは重要
+素振りと言うのは比喩で、基礎の反復とかそんな意味
+エンジニア的な事で言うとなんだかんだと毎日コード書いている時
+やはり日が経つに連れて色々と早くなる
+プロジェクトの構成に慣れたとか、勉強し始めたライブラリとかに慣れたとか
+もっと根本を言えば、常に何かを書いて入ればいざ新しい開発をしようって時に
+設計的なこと（正確な設計ではなくロジックを組み立てるとかそんな範囲）もすぐに考えられる
+最近、エンジニアなのに中々コードを書けていない
+環境構築とかその辺りの事が多いかもしれない
+これはこれで素振りになって後々の効率化に繋がる
+そう信じる
+でもコーディングしないと
+そして数学やらないと
+つでに人間関係もそうなのかも
+常に挨拶する
+相手の目線で考えるように心がける
+常に優しさを持つようにする
+これも素振り
+思いついて書き足したけど、とても重要な気がする
+人としての素振り
+素振りしないといけない事が山済みだ
+それでは</description>
+    </item>
     
     <item>
       <title>やりたいことをやるために</title>
