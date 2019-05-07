@@ -6,10 +6,35 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 May 2019 01:45:28 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 06:27:07 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ある漫画の公式Botがおもしろかった</title>
+      <link>https://3panda.github.io/posts/20190508/</link>
+      <pubDate>Wed, 08 May 2019 06:27:07 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190508/</guid>
+      <description>とある漫画のBotがMyブーム
+ちょっとアダルトな内容を含む漫画
+でもイヤラシイと言うよりは笑える方向性が強い
+漫画はまだちゃんと読んでないけど、
+下ネタと言うよりはそこから面白さを広げた感じだと思う
+そしてBot
+誰かが勝手に作ったのかと思いきや公式
+凄いところは色々なAPIを使ったりしてユーザーの返信に対応している
+漫画の世界観で
+流行りの人工知能的なものやビックデータとかも使っている
+でも世界観を崩していない
+だからものすごく面白い
+こう言う使い方ができるのだとものすごく発見がある
+そしてコンテンツが面白いから活きているBotなのだとも思う
+コンテンツがすごく大事だと、久々に思わされました
+そして、そんなコンテンツを作りたいと久々に思いました
+それでは</description>
+    </item>
     
     <item>
       <title>素振り</title>
