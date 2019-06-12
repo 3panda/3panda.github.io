@@ -6,10 +6,43 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 12 Jun 2019 05:26:57 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jun 2019 06:30:21 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>そんなに急いでどこに行く</title>
+      <link>https://3panda.github.io/posts/20190613/</link>
+      <pubDate>Thu, 13 Jun 2019 06:30:21 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190613/</guid>
+      <description>電車やバスを使って通勤をしていると怖くなることがある
+電車を待っていて到着した電車に乗ろうとするとき、
+並んではいるけどスキあらば抜こうとする人
+電車やバスに乗っている時、到着して降りようとするとき
+混んでいる社内で順番に降りるしか無いのに急ごうとして押してくる人
+電車に乗っていて到着駅についたとき
+降りようとしたら、先に車両に入ろうとする(ホームで待っているはずの)人
+電車に乗った時に人を押しのけて座席に座ろうとする人
+ものすごくマナーの悪い人達の話
+でもこれを単純に「マナーの悪い人」と、いい捨てるのはとても安易過ぎる
+なぜならきっと、その人（達）は普段は社会のルールを守っている人な可能性が高いから
+ではなぜそうなるのか
+ 窮屈くな空間の閉塞感から逃れるため
+ 仕事の忙しさに追われているため
+ 日常の何かに追われているため
+ その他のストレス
+  &amp;hellip;.
+大雑把に考えるとこんな感じなのかと
+おそらく心も体も疲れていると周りへの配慮を行うゆとりがなくなってしまうのだろう
+世の中もう少しゆとりを持って行かないと
+心も体も病んでしまう
+だから急いでしまうときは
+「そんなに急いでどこに行く」
+と自分に問いかけ、落ち着きを取り戻そうと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>スクラムという開発手法についてのメモ</title>
