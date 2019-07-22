@@ -6,10 +6,35 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Jul 2019 00:05:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 06:15:13 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>シンプルに考える</title>
+      <link>https://3panda.github.io/posts/20190723/</link>
+      <pubDate>Tue, 23 Jul 2019 06:15:13 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20190723/</guid>
+      <description>問題に直面する
+解決策を模索する
+解決策が複雑である時
+少し考えてみる
+それが最善の作なのかを
+そもそも解決するための手段は他には無いのかを
+解決策の候補を考えだすとき
+確度の問題で除外した別案は無かったか
+または思い込みで排除した別案は無かったのか
+大きな問題も実は小さな問題の積み重ねだったり
+小さな問題が複雑に絡み合っているだけだったり
+実はその解決策はシンプルだったりする事もある
+本来の目的と、それをなすために必要な手段について
+冷静に考えると以外にシンプルな手段が
+事を解決に導いてくれる
+そんなことが最近もあったので記事にしてみました。
+それでは</description>
+    </item>
     
     <item>
       <title>時には休息を</title>
