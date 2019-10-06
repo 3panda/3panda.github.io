@@ -6,7 +6,7 @@
     <description>Recent content in Tags on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 Oct 2019 06:26:01 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 06:23:06 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://3panda.github.io/tags/</link>
-      <pubDate>Fri, 04 Oct 2019 06:26:01 +0900</pubDate>
+      <pubDate>Mon, 07 Oct 2019 06:23:06 +0900</pubDate>
       
       <guid>https://3panda.github.io/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ひとりごと</title>
+      <link>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
+      <pubDate>Mon, 07 Oct 2019 06:23:06 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
       <description></description>
     </item>
     
@@ -26,15 +35,6 @@
       <pubDate>Fri, 04 Oct 2019 06:26:01 +0900</pubDate>
       
       <guid>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ひとりごと</title>
-      <link>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</link>
-      <pubDate>Wed, 02 Oct 2019 06:19:40 +0900</pubDate>
-      
-      <guid>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</guid>
       <description></description>
     </item>
     
