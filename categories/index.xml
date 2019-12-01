@@ -6,10 +6,31 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 29 Nov 2019 07:26:22 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 06:34:24 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>じぶん へのおてがみはのこそう できるだけせいかくに</title>
+      <link>https://3panda.github.io/posts/20191202/</link>
+      <pubDate>Mon, 02 Dec 2019 06:34:24 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20191202/</guid>
+      <description>いぜんに やったことがある せってい をやっていて
+ひさしぶり だから わからない ときがあります
+こんなとき、かのこのじぶんがのこした きろく なりをさがせば ヒント があるのですが
+そのヒントがあまり役に立たづに こまる ことがあります
+プログラムをしていると、コメントだったり
+バージョン管理ツールの更新の記録は正確に
+そして わかりやすく残すことを求められます。
+これは他の誰かを意識しての場合が多いのですが
+自分個人のことにおいてもそうしたほうが良いと
+出来なかった時に限って後悔します
+今やっている苦労を今後のために
+未来の自分のためにちゃんとお手紙をかいておこうとおもいます
+それでは</description>
+    </item>
     
     <item>
       <title>散歩</title>
