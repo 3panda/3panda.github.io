@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ポエム on 3panda</title>
+    <link>https://3panda.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</link>
+    <description>Recent content in ポエム on 3panda</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 15 Jan 2020 06:26:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://3panda.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>無題</title>
+      <link>https://3panda.github.io/posts/20200115/</link>
+      <pubDate>Wed, 15 Jan 2020 06:26:00 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200115/</guid>
+      <description>それは恋では無く愛だろう
+求めるのでは無くただ無償に与えたくなるもの
+そして伝えることは無く伝わる事も望まない
+秘めた想いはひめたまま
+ただ愛おしく想う相手の幸せを願おう
+そして幸せになってもらえるように導こう</description>
+    </item>
+    
+  </channel>
+</rss>
