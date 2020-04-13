@@ -6,10 +6,29 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 13 Apr 2020 06:31:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 05:46:50 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ある書籍のはじめのはなし</title>
+      <link>https://3panda.github.io/posts/20200414/</link>
+      <pubDate>Tue, 14 Apr 2020 05:46:50 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200414/</guid>
+      <description>「チームジャーニー」と言うチーム開発の改善などを学ぶ本を読んでいます。
+冒頭に出てくるキーワード
+チームとグループの違い
+個人的な解釈
+ チームは一つの目標に向かって進んでいく集団の事 グループは個が集まっている集団を外部から見分けるための括り  今、自分がいるそれは正直どちらになるのか？
+チームとして機能しているのか？
+改善点は何なのか？
+前半を読んだだけですが考えさせられる事ばかりです。
+読み終わった頃にはもう少し、チーム開発とは何かを自分なりに定義出来るように
+自分自身でも考えながら読み進めようと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>平穏</title>
