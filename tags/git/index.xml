@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GIT on 3panda</title>
@@ -22,11 +22,12 @@
 誰かのお役に立てれば幸いです。
 前提条件 サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。
 configにサブアカウント用の設定を追加 ~/.ssh/config configにgithub-subの設定を用意します。 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。
-# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git  clone HostNameのところをsubの変更して行います。
-git clone @github-sub:XXXX/xxxx.git:  もし cloneで怒られたらこれ
-git remote rm origin  submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
-git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &amp;ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
-この設定が無いとglobalで設定されたuserで反映されてしまいます。</description>
+# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git clone HostNameのところをsubの変更して行います。
+git clone @github-sub:XXXX/xxxx.git: もし cloneで怒られたらこれ
+git remote rm origin submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
+git submodule add -b master git@github-sub:XXXX/xxxx.git sub config &amp;ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
+この設定が無いとglobalで設定されたuserで反映されてしまいます。
+git config --local user.name [SubのGitHubアカウントの名前] git config --local user.</description>
     </item>
     
   </channel>

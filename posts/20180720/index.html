@@ -19,11 +19,12 @@
 誰かのお役に立てれば幸いです。
 前提条件 サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。
 configにサブアカウント用の設定を追加 ~/.ssh/config configにgithub-subの設定を用意します。 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。
-# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git  clone HostNameのところをsubの変更して行います。
-git clone @github-sub:XXXX/xxxx.git:  もし cloneで怒られたらこれ
-git remote rm origin  submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
-git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
-この設定が無いとglobalで設定されたuserで反映されてしまいます。"/>
+# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git clone HostNameのところをsubの変更して行います。
+git clone @github-sub:XXXX/xxxx.git: もし cloneで怒られたらこれ
+git remote rm origin submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
+git submodule add -b master git@github-sub:XXXX/xxxx.git sub config &ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
+この設定が無いとglobalで設定されたuserで反映されてしまいます。
+git config --local user.name [SubのGitHubアカウントの名前] git config --local user."/>
   
     <meta name="twitter:site" content="@3panda"/>
   
@@ -38,7 +39,7 @@ git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &ndash;loca
 		
 		<meta name="author" content="3panda">
 		<meta name="description" content="ノージャンルでダラダラ書きます。思った事とか">
-		<meta name="generator" content="Hugo 0.55.3" />
+		<meta name="generator" content="Hugo 0.69.2" />
 		<title>一つのデバイスで複数のGitアカウントを管理する &middot; 3panda</title>
 		<link rel="shortcut icon" href="https://3panda.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://3panda.github.io/css/style.css">
@@ -100,37 +101,26 @@ git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &ndash;loca
                   
                     <div id="toc">
                       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#前提条件">前提条件</a></li>
-<li><a href="#configにサブアカウント用の設定を追加-ssh-config">configにサブアカウント用の設定を追加 ~/.ssh/config</a></li>
-<li><a href="#clone">clone</a></li>
-<li><a href="#submoduleの場合">submoduleの場合</a></li>
-<li><a href="#config-localでサブアカウント用の設定を行う">config &ndash;localでサブアカウント用の設定を行う</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#configにサブアカウント用の設定を追加-sshconfig">configにサブアカウント用の設定を追加 ~/.ssh/config</a></li>
+    <li><a href="#clone">clone</a></li>
+    <li><a href="#submoduleの場合">submoduleの場合</a></li>
+    <li><a href="#config---localでサブアカウント用の設定を行う">config &ndash;localでサブアカウント用の設定を行う</a></li>
+  </ul>
 </nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    
-
-<p>一つのデバイスで複数のGitHubアカウントを管理したい時の方法をまとめてみました。<br />
+                    <p>一つのデバイスで複数のGitHubアカウントを管理したい時の方法をまとめてみました。<br>
 利用が想定されるケースは少ないかもしれませんが、私は必要に迫られたので今後のためにまとめておきます。</p>
-
 <p>誰かのお役に立てれば幸いです。</p>
-
 <h2 id="前提条件">前提条件</h2>
-
 <p>サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。</p>
-
-<h2 id="configにサブアカウント用の設定を追加-ssh-config">configにサブアカウント用の設定を追加 ~/.ssh/config</h2>
-
+<h2 id="configにサブアカウント用の設定を追加-sshconfig">configにサブアカウント用の設定を追加 ~/.ssh/config</h2>
 <p>configにgithub-subの設定を用意します。
 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。</p>
-
 <pre><code># こちらは通常用 概ねこんな感じになっているはず 
 Host github github.com
   HostName github.com
@@ -142,44 +132,25 @@ Host github-sub
   HostName github.com
   IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key
   User git
-</code></pre>
-
-<h2 id="clone">clone</h2>
-
+</code></pre><h2 id="clone">clone</h2>
 <p>HostNameのところをsubの変更して行います。</p>
-
 <pre><code>git clone @github-sub:XXXX/xxxx.git:
-</code></pre>
-
-<p>もし cloneで怒られたらこれ</p>
-
+</code></pre><p>もし cloneで怒られたらこれ</p>
 <pre><code>git remote rm origin
-</code></pre>
-
-<h2 id="submoduleの場合">submoduleの場合</h2>
-
+</code></pre><h2 id="submoduleの場合">submoduleの場合</h2>
 <p>同じくHostNameのところをsubの変更して行います。
 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。</p>
-
 <pre><code>git submodule add -b master git@github-sub:XXXX/xxxx.git sub
-</code></pre>
-
-<h2 id="config-localでサブアカウント用の設定を行う">config &ndash;localでサブアカウント用の設定を行う</h2>
-
-<p>config localでサブアカウントの名前とemailを設定しておきます。<br />
+</code></pre><h2 id="config---localでサブアカウント用の設定を行う">config &ndash;localでサブアカウント用の設定を行う</h2>
+<p>config localでサブアカウントの名前とemailを設定しておきます。<br>
 この設定が無いとglobalで設定されたuserで反映されてしまいます。</p>
-
 <pre><code>git config --local user.name [SubのGitHubアカウントの名前]
 git config --local user.email [SubのGitHubアカウントのemail]
-</code></pre>
-
-<p>※submoduleの内容を更新する場合はその紐付けたディレクトリ（この例ではsub）でも上記を実行する必要がある</p>
-
+</code></pre><p>※submoduleの内容を更新する場合はその紐付けたディレクトリ（この例ではsub）でも上記を実行する必要がある</p>
 <pre><code>cd sub
 git config --local user.name [SubのGitHubアカウントの名前]
 git config --local user.email [SubのGitHubアカウントのemail]
 </code></pre>
-
                 </section>
             </article>
 

@@ -24,7 +24,7 @@
 		
 		<meta name="author" content="3panda">
 		<meta name="description" content="ノージャンルでダラダラ書きます。思った事とか">
-		<meta name="generator" content="Hugo 0.55.3" />
+		<meta name="generator" content="Hugo 0.69.2" />
 		<title>3panda</title>
 		<link rel="shortcut icon" href="https://3panda.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://3panda.github.io/css/style.css">
@@ -71,6 +71,23 @@
 
     <section id="wrapper" class="home">
         <ul id="post-list">
+    
+    
+        
+            <li>
+                <aside class="dates">Jul 24</aside>
+                <a href='https://3panda.github.io/posts/20180724/'>
+                    異常事態、その後
+                    
+                        
+                            <h2>昨日は熱中症にかかってしまったと言う記事だったのですが、病院の点滴が効いたのか熱も37度を行くか行かないかをウロチョロする程度に落ち着いております。
+ちょっと養生するように言われているので、かなり短いですが今日はこの辺で
+m(_ _)m</h2>
+                        
+                    
+                </a>
+            </li>
+        
     
     
         
@@ -127,11 +144,12 @@
 誰かのお役に立てれば幸いです。
 前提条件 サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。
 configにサブアカウント用の設定を追加 ~/.ssh/config configにgithub-subの設定を用意します。 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。
-# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git  clone HostNameのところをsubの変更して行います。
-git clone @github-sub:XXXX/xxxx.git:  もし cloneで怒られたらこれ
-git remote rm origin  submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
-git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config –localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
-この設定が無いとglobalで設定されたuserで反映されてしまいます。</h2>
+# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git clone HostNameのところをsubの変更して行います。
+git clone @github-sub:XXXX/xxxx.git: もし cloneで怒られたらこれ
+git remote rm origin submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
+git submodule add -b master git@github-sub:XXXX/xxxx.git sub config –localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
+この設定が無いとglobalで設定されたuserで反映されてしまいます。
+git config --local user.name [SubのGitHubアカウントの名前] git config --local user.</h2>
                         
                     
                 </a>
@@ -147,15 +165,13 @@ git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config –localで
                     
                         
                             <h2>今回は技術ネタです。一応エンジニアなので(^^:
-今年になってAWSのLambda &#43; APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが
-Ajaxを利用する時にかなり苦戦を強いられました。
+今年になってAWSのLambda &#43; APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが Ajaxを利用する時にかなり苦戦を強いられました。
 今回はその時に覚えた事を備忘録代わりに記事にしたいと思います。
 概要 今回はありがちな入力フォームをAjaxで実装して見たいと思います。 フロントエンド側(html)とバックエンド側(サーバサイドなど)の連携で最も多いのはフォーム画面だと思います。 そして最近にWebフォームでAjaxを利用しないケースは少ないのでAjaxを利用します。
 実装の流れ  HTMLのフォームに名前とメールアドレスを入力しAPIGatewayへ APIGatewayが受け取りLambdaへフォーム内容を渡す Lambdaは受け取った名前やアドレスを扱ってなんらかの処理（例えばDB書き込みやメールを送るなどだがここの処理は割愛） Lambdaは通信結果をAPIGatewayへ HTMLはAjaxで結果を受け取る  図解するとこんな感じ html&lt;— API Gateway –&gt; Lambda
 作成手順 1.API Gateway: Lambda関数を先に作作成時に自動生成だとメソッド: ANYになりCORSが有効にして効かない不具合が あるため、ANYを削除しPOSTで新たにメソッドを作成
  アクションのプルダウンメニューで以下の順に実行 リソースのアクション-メソッドの作成 POSTを選択  1-1.階層 階層は以下のようになっている想定
-/ -/Test --POST  1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択 アジアパシフィック(東京)なのでap-northeast-1 Lambda 関数 Test デフォルトタイムアウトの使用 チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行 1. リソースのアクション-CORSの有効化 1. APIアクション-APIのデプロイ 1. デプロイ
-1-4.メソッドリクエスト ※ ここの設定が少々怪しいので要検証</h2>
+/ -/Test --POST 1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択   アジアパシフィック(東京)なのでap-northeast-1   Lambda 関数   Test   デフォルトタイムアウトの使用   チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行</h2>
                         
                     
                 </a>
@@ -179,11 +195,10 @@ Reactなので必然的にHTMLはもちろん、CSSも書く事になるので
 と実感するようになりました。
 この二年間、Webについては一応は情報は追ってはいたんですが、進歩が早くて浦島太郎状態です(^^:
 Gruntはいつの間にか姿が見えなくなり、glupは触る前に見かけなくなり、今はタスクランナーとかはWebpackなんですね。
-CSSプロセッサはPostCSSはまだ何となく、SASSは「知ってるぞ！」って思っていたらnode-sassだし(元はRubyで基本同じだけど)…
-まぁ相変わらずなのはWebのフロントは環境構築が大変…
+CSSプロセッサはPostCSSはまだ何となく、SASSは「知ってるぞ！」って思っていたらnode-sassだし(元はRubyで基本同じだけど)… まぁ相変わらずなのはWebのフロントは環境構築が大変…
 それでもJavaScriptのフレームワークはReact.jsやVue.jsが定着化し
-Alt.jsもTypeScriptかBabel(正確にはAltでは無い？)のほぼ二つに定番として落ち着いているので 今が新たにWebを始めるには丁度良い時期なのかもしれません。
-最も、この進化の早い事こそWebの醍醐味で、この事に改めて魅力を感じれたからこそ、再び帰ってきった気しています。
+Alt.jsもTypeScriptかBabel(正確にはAltでは無い？)のほぼ二つに定番として落ち着いているので 今が__新たにWebを始めるには丁度良い時期__なのかもしれません。
+最も、この__進化の早い事こそWebの醍醐味で、この事に改めて魅力を感じれた__からこそ、再び帰ってきった気しています。
 そんなわけで3pandaは気持ちを新たにWebのエンジニアとして頑張って参ります。
 今後ともよろしくお願い致します。
 PS:
@@ -227,10 +242,10 @@ PS:
                         
                             <h2>会社勤めを辞めて早2週間が過ぎようとしています。
 お仕事の話が(数ヶ月のフリーの話からその後の引き取り先??のお話などあらゆる可能性も含め）色々と進んでいるので、気持ち的には非常に穏やかです。
-金銭的な面で言えば先月この状態だったら本当に嬉しかったのですが贅沢は言ってられません。
+金銭的な面で言えば先月この状態だったら__本当に嬉しかった__のですが贅沢は言ってられません。
 さて、今朝は色々と事務処理を行うために銀行や郵便局に用事がありましてウロチョロと歩き回っておりました。
 午前中だったこともあり、まだそれほど暑くも無く、歩くには丁度よかったです。
-家で仕事をしているとものすごく快適なのですが、難点はあまり動かないための運動不足。
+家で仕事をしているともの__すごく快適__なのですが、難点はあまり動かないための運動不足。
 今、体型的には痩せ過ぎなので太る心配は無いのですが（むしろ増やしたい）、筋肉の衰えてしまうと困るのでたまには今日みたいに理由をつけて歩いた方が良いのかと思いました。
 出来れば毎日、少なくても週に三日程は行いたいと思います。</h2>
                         
@@ -301,29 +316,6 @@ OSも今のところ最新のHigh Sierraがインストール出来て問題な�
 たまたまテレビのニュースで見たいのですが 中学や高校の期末試験が、授業時間の関係で1日5教科を行うなどかなり以上事態なところもあるようでした。
 なんか想像するだけで大変です…
 特に落ちはありませんが今日はこのへんでmm</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <aside class="dates">Jul 9</aside>
-                <a href='https://3panda.github.io/posts/20180709/'>
-                    5時起きから6時起き、そしてまた5時起きに
-                    
-                        
-                            <h2>今日から起床時間を5時過ぎに変更しました。
-2月くらいまで10年近く5時に起床していました。
-我が家は共働きで妻の出勤が早かった事もあってそれに合わせた感じです。
-昨年、妻が仕事を辞める事になり、早起きする理由が少し無くなったのですが 習慣を急に変えるもの難しいものでそのままでした。
-ただ2月の前々職を退職し、次の職場が10時出勤で早く起きる理由も無くなってしまった事もあり、1時間遅き6時起床に変更していました。
-で、なんで今回戻したのかって話ですが、来月からのお仕事で少し早めに出勤する事になりそうで5時に起きる事になりました。
-そんなわけで寝る時間は11時目標で頑張っております。
-今は自宅で仕事をしているので問題なくやって行けそうです。
-でもたまには夜更かししたいのが本音ですが健康のためにも極力このままいければと思っております。</h2>
                         
                     
                 </a>

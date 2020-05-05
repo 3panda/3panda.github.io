@@ -1,47 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://3panda.github.io/tags/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://3panda.github.io/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-05-05T19:35:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://3panda.github.io/categories/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://3panda.github.io/posts/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
+    <loc>https://3panda.github.io/post/</loc>
+    <lastmod>2020-05-05T19:35:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://3panda.github.io/tags/</loc>
-    <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-05-05T19:35:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/tags/test/</loc>
+    <lastmod>2020-05-05T19:35:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/posts/20200505/</loc>
+    <lastmod>2020-05-05T19:35:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%84%E3%81%AA%E3%81%97/</loc>
     <lastmod>2020-04-28T06:38:56+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -52,7 +40,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A8/</loc>
     <lastmod>2020-04-27T06:26:45+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -136,12 +123,6 @@
   </url>
   
   <url>
-    <loc>https://3panda.github.io/post/</loc>
-    <lastmod>2020-04-06T06:34:53+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://3panda.github.io/posts/20200403/</loc>
     <lastmod>2020-04-03T06:27:43+09:00</lastmod>
   </url>
@@ -154,7 +135,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%AF%E3%81%AA%E3%81%97/</loc>
     <lastmod>2020-04-01T06:28:50+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -170,7 +150,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%93%E3%81%AEblog%E3%81%AE%E8%A9%B1/</loc>
     <lastmod>2020-03-30T06:30:35+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -191,7 +170,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</loc>
     <lastmod>2020-03-25T06:31:16+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -242,7 +220,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%84%E3%81%AF%E3%81%AA%E3%81%97/</loc>
     <lastmod>2020-03-10T06:30:40+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -458,7 +435,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E5%AE%A3%E8%A8%80/</loc>
     <lastmod>2019-12-18T07:34:02+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -739,7 +715,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%86%E3%82%8C%E3%81%97%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AF%E3%81%AA%E3%81%97/</loc>
     <lastmod>2019-09-27T07:08:28+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1290,7 +1265,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E8%80%83%E3%81%88/</loc>
     <lastmod>2019-04-08T06:21:15+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1751,7 +1725,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%B5%E3%82%8A%E3%81%8B%E3%81%88%E3%82%8A/</loc>
     <lastmod>2018-11-16T07:14:34+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2077,7 +2050,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
     <lastmod>2018-08-15T07:07:33+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2098,7 +2070,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E3%81%97%E3%81%94%E3%81%A8%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97/</loc>
     <lastmod>2018-08-09T23:27:37+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2119,7 +2090,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</loc>
     <lastmod>2018-08-07T10:37:13+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2135,7 +2105,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E5%A4%A2/</loc>
     <lastmod>2018-08-03T18:53:41+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2171,7 +2140,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E7%86%B1%E4%B8%AD%E7%97%87/</loc>
     <lastmod>2018-07-25T17:54:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2192,13 +2160,11 @@
   <url>
     <loc>https://3panda.github.io/tags/git/</loc>
     <lastmod>2018-07-20T09:40:22+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3panda.github.io/tags/tec/</loc>
     <lastmod>2018-07-20T09:40:22+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2209,7 +2175,6 @@
   <url>
     <loc>https://3panda.github.io/tags/aws/</loc>
     <lastmod>2018-07-19T11:20:14+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2255,7 +2220,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E8%BF%91%E6%B3%81/</loc>
     <lastmod>2018-07-06T09:11:12+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2271,7 +2235,6 @@
   <url>
     <loc>https://3panda.github.io/tags/%E8%BB%A2%E8%81%B7/</loc>
     <lastmod>2018-07-05T09:49:06+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2292,6 +2255,10 @@
   <url>
     <loc>https://3panda.github.io/posts/20180702/</loc>
     <lastmod>2018-07-02T09:52:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://3panda.github.io/categories/</loc>
   </url>
   
 </urlset>

@@ -15,15 +15,13 @@
   
   <meta name="twitter:title" content="AWS Lambda( &#43; APIGateway) を使ったAjaxなWebフォームを作ってみる"/>
   <meta name="twitter:description" content="今回は技術ネタです。一応エンジニアなので(^^:
-今年になってAWSのLambda &#43; APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが
-Ajaxを利用する時にかなり苦戦を強いられました。
+今年になってAWSのLambda &#43; APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが Ajaxを利用する時にかなり苦戦を強いられました。
 今回はその時に覚えた事を備忘録代わりに記事にしたいと思います。
 概要 今回はありがちな入力フォームをAjaxで実装して見たいと思います。 フロントエンド側(html)とバックエンド側(サーバサイドなど)の連携で最も多いのはフォーム画面だと思います。 そして最近にWebフォームでAjaxを利用しないケースは少ないのでAjaxを利用します。
 実装の流れ  HTMLのフォームに名前とメールアドレスを入力しAPIGatewayへ APIGatewayが受け取りLambdaへフォーム内容を渡す Lambdaは受け取った名前やアドレスを扱ってなんらかの処理（例えばDB書き込みやメールを送るなどだがここの処理は割愛） Lambdaは通信結果をAPIGatewayへ HTMLはAjaxで結果を受け取る  図解するとこんな感じ html&lt;&mdash; API Gateway &ndash;&gt; Lambda
 作成手順 1.API Gateway: Lambda関数を先に作作成時に自動生成だとメソッド: ANYになりCORSが有効にして効かない不具合が あるため、ANYを削除しPOSTで新たにメソッドを作成
  アクションのプルダウンメニューで以下の順に実行 リソースのアクション-メソッドの作成 POSTを選択  1-1.階層 階層は以下のようになっている想定
-/ -/Test --POST  1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択 アジアパシフィック(東京)なのでap-northeast-1 Lambda 関数 Test デフォルトタイムアウトの使用 チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行 1. リソースのアクション-CORSの有効化 1. APIアクション-APIのデプロイ 1. デプロイ
-1-4.メソッドリクエスト ※ ここの設定が少々怪しいので要検証"/>
+/ -/Test --POST 1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択   アジアパシフィック(東京)なのでap-northeast-1   Lambda 関数   Test   デフォルトタイムアウトの使用   チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行"/>
   
     <meta name="twitter:site" content="@3panda"/>
   
@@ -38,7 +36,7 @@ Ajaxを利用する時にかなり苦戦を強いられました。
 		
 		<meta name="author" content="3panda">
 		<meta name="description" content="ノージャンルでダラダラ書きます。思った事とか">
-		<meta name="generator" content="Hugo 0.55.3" />
+		<meta name="generator" content="Hugo 0.69.2" />
 		<title>AWS Lambda( &#43; APIGateway) を使ったAjaxなWebフォームを作ってみる &middot; 3panda</title>
 		<link rel="shortcut icon" href="https://3panda.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://3panda.github.io/css/style.css">
@@ -81,7 +79,7 @@ Ajaxを利用する時にかなり苦戦を強いられました。
                     </h1>
                     <h2 class="headline">
                     Jul 19, 2018 11:20
-                    · 349 words
+                    · 346 words
                     · 2 minute read
                       <span class="tags">
                       
@@ -100,60 +98,36 @@ Ajaxを利用する時にかなり苦戦を強いられました。
                   
                     <div id="toc">
                       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#概要">概要</a>
-<ul>
-<li><a href="#実装の流れ">実装の流れ</a></li>
-<li><a href="#図解するとこんな感じ">図解するとこんな感じ</a></li>
-</ul></li>
-<li><a href="#作成手順">作成手順</a>
-<ul>
-<li><a href="#1-api-gateway">1.API Gateway:</a>
-<ul>
-<li><a href="#1-1-階層">1-1.階層</a></li>
-<li><a href="#1-2-セットアップ-post-セットアップ">1-2. セットアップ(POST - セットアップ)</a></li>
-<li><a href="#1-3-corsの有効化">1-3.CORSの有効化</a></li>
-<li><a href="#1-4-メソッドリクエスト">1-4.メソッドリクエスト</a></li>
-<li><a href="#2-5-統合リクエスト">2-5.統合リクエスト</a>
-<ul>
-<li><a href="#テンプレートの例">テンプレートの例</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#2-lambda関数">2.Lambda関数:</a>
-<ul>
-<li><a href="#lambda-function-py-lambdaの関数">lambda_function.py(lambdaの関数)</a></li>
-</ul></li>
-<li><a href="#3-html-フォーム-側">3.HTML(フォーム)側</a>
-<ul>
-<li><a href="#index-html">index.html</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#おわりに">おわりに</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#概要">概要</a>
+      <ul>
+        <li><a href="#実装の流れ">実装の流れ</a></li>
+        <li><a href="#図解するとこんな感じ">図解するとこんな感じ</a></li>
+      </ul>
+    </li>
+    <li><a href="#作成手順">作成手順</a>
+      <ul>
+        <li><a href="#1api-gateway">1.API Gateway:</a></li>
+        <li><a href="#2lambda関数">2.Lambda関数:</a></li>
+        <li><a href="#3htmlフォーム側">3.HTML(フォーム)側</a></li>
+      </ul>
+    </li>
+    <li><a href="#おわりに">おわりに</a></li>
+  </ul>
 </nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    
-
-<p>今回は技術ネタです。一応エンジニアなので(^^:</p>
-
-<p>今年になってAWSのLambda + APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが<br />
-Ajaxを利用する時にかなり苦戦を強いられました。<br />
+                    <p>今回は技術ネタです。一応エンジニアなので(^^:</p>
+<p>今年になってAWSのLambda + APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが <br>
+Ajaxを利用する時にかなり苦戦を強いられました。<br>
 今回はその時に覚えた事を備忘録代わりに記事にしたいと思います。</p>
-
 <h2 id="概要">概要</h2>
-
 <p>今回はありがちな入力フォームをAjaxで実装して見たいと思います。
 フロントエンド側(html)とバックエンド側(サーバサイドなど)の連携で最も多いのはフォーム画面だと思います。
 そして最近にWebフォームでAjaxを利用しないケースは少ないのでAjaxを利用します。</p>
-
 <h3 id="実装の流れ">実装の流れ</h3>
-
 <ol>
 <li>HTMLのフォームに名前とメールアドレスを入力しAPIGatewayへ</li>
 <li>APIGatewayが受け取りLambdaへフォーム内容を渡す</li>
@@ -161,79 +135,67 @@ Ajaxを利用する時にかなり苦戦を強いられました。<br />
 <li>Lambdaは通信結果をAPIGatewayへ</li>
 <li>HTMLはAjaxで結果を受け取る</li>
 </ol>
-
 <h3 id="図解するとこんな感じ">図解するとこんな感じ</h3>
-
 <p>html&lt;&mdash;  API Gateway   &ndash;&gt; Lambda</p>
-
 <h2 id="作成手順">作成手順</h2>
-
-<h3 id="1-api-gateway">1.API Gateway:</h3>
-
+<h3 id="1api-gateway">1.API Gateway:</h3>
 <p>Lambda関数を先に作作成時に自動生成だとメソッド: ANYになりCORSが有効にして効かない不具合が
 あるため、ANYを削除しPOSTで新たにメソッドを作成</p>
-
 <ol>
 <li>アクションのプルダウンメニューで以下の順に実行</li>
 <li>リソースのアクション-メソッドの作成</li>
 <li>POSTを選択</li>
 </ol>
-
-<h4 id="1-1-階層">1-1.階層</h4>
-
+<h4 id="1-1階層">1-1.階層</h4>
 <p>階層は以下のようになっている想定</p>
-
 <pre><code>/
 -/Test
 --POST
-</code></pre>
-
-<h4 id="1-2-セットアップ-post-セットアップ">1-2. セットアップ(POST - セットアップ)</h4>
-
+</code></pre><h4 id="1-2-セットアップpost---セットアップ">1-2. セットアップ(POST - セットアップ)</h4>
 <ol>
 <li>統合タイプ-Lambda 関数を選択</li>
 <li>Lambda プロキシ統合の使用-今回はチェックを入れない</li>
 <li>Lambda リージョン-適切なものを選択</li>
-<li>アジアパシフィック(東京)なのでap-northeast-1</li>
-<li>Lambda 関数</li>
-<li>Test</li>
-<li>デフォルトタイムアウトの使用</li>
-<li>チェック</li>
 </ol>
-
-<h4 id="1-3-corsの有効化">1-3.CORSの有効化</h4>
-
-<p>アクションのプルダウンメニューで以下の順に実行
-1. リソースのアクション-CORSの有効化
-1. APIアクション-APIのデプロイ
-1. デプロイ</p>
-
-<h4 id="1-4-メソッドリクエスト">1-4.メソッドリクエスト</h4>
-
+<ul>
+<li>アジアパシフィック(東京)なのでap-northeast-1</li>
+</ul>
+<ol>
+<li>Lambda 関数</li>
+</ol>
+<ul>
+<li>Test</li>
+</ul>
+<ol>
+<li>デフォルトタイムアウトの使用</li>
+</ol>
+<ul>
+<li>チェック</li>
+</ul>
+<h4 id="1-3corsの有効化">1-3.CORSの有効化</h4>
+<p>アクションのプルダウンメニューで以下の順に実行</p>
+<ol>
+<li>リソースのアクション-CORSの有効化</li>
+<li>APIアクション-APIのデプロイ</li>
+<li>デプロイ</li>
+</ol>
+<h4 id="1-4メソッドリクエスト">1-4.メソッドリクエスト</h4>
 <p>※ ここの設定が少々怪しいので要検証</p>
-
-<p>&ndash;URL クエリ文字列パラメータ<br />
-&mdash;path<br />
-&ndash;HTTP リクエストヘッダー<br />
+<p>&ndash;URL クエリ文字列パラメータ<br>
+&mdash;path<br>
+&ndash;HTTP リクエストヘッダー<br>
 &mdash;Content-Type</p>
-
-<h4 id="2-5-統合リクエスト">2-5.統合リクエスト</h4>
-
-<p>&ndash;本文マッピングテンプレート<br />
-&mdash;テンプレートが定義されていない場合 (推奨) をチェック<br />
-&mdash;Content-Type<br />
-&mdash;-application/jsonに<br />
+<h4 id="2-5統合リクエスト">2-5.統合リクエスト</h4>
+<p>&ndash;本文マッピングテンプレート<br>
+&mdash;テンプレートが定義されていない場合 (推奨) をチェック<br>
+&mdash;Content-Type<br>
+&mdash;-application/jsonに<br>
 &mdash;&ndash;テテンプレート</p>
-
 <p>※ここを適当にして本当にハマりました。</p>
-
 <p>参考:<a href="https://qiita.com/r7kamura/items/6420538789da95cd2f47">API Gatewayへの入力値にLambdaからアクセスする</a>
 こちらの記事が非常に参考</p>
-
 <p>ここで渡ってくるデータを指定するので必ず設定が必要です。</p>
-
 <h5 id="テンプレートの例">テンプレートの例</h5>
-
 <pre><code>{
   &quot;accountId&quot;: &quot;$context.identity.accountId&quot;,
   &quot;apiId&quot;: &quot;$context.apiId&quot;,
@@ -266,132 +228,115 @@ Ajaxを利用する時にかなり苦戦を強いられました。<br />
   &quot;userArn&quot;: &quot;$context.identity.userArn&quot;
 }
 
-</code></pre>
-
-<h3 id="2-lambda関数">2.Lambda関数:</h3>
-
+</code></pre><h3 id="2lambda関数">2.Lambda関数:</h3>
 <p>設計図から[microservice-http-endpoint-python3]を選択
 関数名は今回は「Test」とする</p>
+<h4 id="lambda_functionpylambdaの関数">lambda_function.py(lambdaの関数)</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lambda_function.py" data-lang="lambda_function.py">
+<span style="color:#f92672">import</span> json
+<span style="color:#f92672">import</span> urllib
 
-<h4 id="lambda-function-py-lambdaの関数">lambda_function.py(lambdaの関数)</h4>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lambda_handler</span>(event, context):
+    <span style="color:#75715e">#print(json.dumps(event, indent=4))</span>
 
-<pre><code class="language-lambda_function.py">
-import json
-import urllib
-
-def lambda_handler(event, context):
-    #print(json.dumps(event, indent=4))
-
-    try:
-        # フォームに入力されたデータを得る
-        param = urllib.parse.parse_qs(event['requestParameters'])
-        username = param['username'][0]
-        email = param['email'][0]
+    <span style="color:#66d9ef">try</span>:
+        <span style="color:#75715e"># フォームに入力されたデータを得る</span>
+        param <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>parse_qs(event[<span style="color:#e6db74">&#39;requestParameters&#39;</span>])
+        username <span style="color:#f92672">=</span> param[<span style="color:#e6db74">&#39;username&#39;</span>][<span style="color:#ae81ff">0</span>]
+        email <span style="color:#f92672">=</span> param[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#ae81ff">0</span>]
         
-        # クライアントのIPを　得る
-        host = event['sourceIp']
+        <span style="color:#75715e"># クライアントのIPを　得る</span>
+        host <span style="color:#f92672">=</span> event[<span style="color:#e6db74">&#39;sourceIp&#39;</span>]
                 
-        # 結果を返す
-        return {
-            'statusCode' : 200,
-            'headers' : {
-                    'access-control-allow-origin' : '*',
-                    'content-type' : 'application/json'
+        <span style="color:#75715e"># 結果を返す</span>
+        <span style="color:#66d9ef">return</span> {
+            <span style="color:#e6db74">&#39;statusCode&#39;</span> : <span style="color:#ae81ff">200</span>,
+            <span style="color:#e6db74">&#39;headers&#39;</span> : {
+                    <span style="color:#e6db74">&#39;access-control-allow-origin&#39;</span> : <span style="color:#e6db74">&#39;*&#39;</span>,
+                    <span style="color:#e6db74">&#39;content-type&#39;</span> : <span style="color:#e6db74">&#39;application/json&#39;</span>
             },
-            'data' : {'email' : email},
-            'completed' : 1
+            <span style="color:#e6db74">&#39;data&#39;</span> : {<span style="color:#e6db74">&#39;email&#39;</span> : email},
+            <span style="color:#e6db74">&#39;completed&#39;</span> : <span style="color:#ae81ff">1</span>
         }
 
-    except:
-        import traceback
-        traceback.print_exc()
-        return {
-            'statusCode' : 200,
-            'headers' : {
-                    'access-control-allow-origin' : '*',
-                    'content-type' : 'application/json'
+    <span style="color:#66d9ef">except</span>:
+        <span style="color:#f92672">import</span> traceback
+        traceback<span style="color:#f92672">.</span>print_exc()
+        <span style="color:#66d9ef">return</span> {
+            <span style="color:#e6db74">&#39;statusCode&#39;</span> : <span style="color:#ae81ff">200</span>,
+            <span style="color:#e6db74">&#39;headers&#39;</span> : {
+                    <span style="color:#e6db74">&#39;access-control-allow-origin&#39;</span> : <span style="color:#e6db74">&#39;*&#39;</span>,
+                    <span style="color:#e6db74">&#39;content-type&#39;</span> : <span style="color:#e6db74">&#39;application/json&#39;</span>
             },
-            'completed' : 0
+            <span style="color:#e6db74">&#39;completed&#39;</span> : <span style="color:#ae81ff">0</span>
         }
-</code></pre>
-
-<h3 id="3-html-フォーム-側">3.HTML(フォーム)側</h3>
-
-<p>フォーム側のJavaScript(html)になります。<br />
-分かりやすくするためにhtmlの中でJavaScriptを書いています。<br />
+</code></pre></div><h3 id="3htmlフォーム側">3.HTML(フォーム)側</h3>
+<p>フォーム側のJavaScript(html)になります。<br>
+分かりやすくするためにhtmlの中でJavaScriptを書いています。<br>
 CSSなどは割愛しておりますのでご了承ください。</p>
+<h4 id="indexhtml">index.html</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-index.html" data-lang="index.html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ja&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+&lt;<span style="color:#f92672">title</span>&gt;jqueryのajaxのサンプル&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#a6e22e">$</span>( <span style="color:#66d9ef">function</span>() {
 
-<h4 id="index-html">index.html</h4>
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">apiUrl</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://xxxxxxxxxxx/Test&#39;</span>;
 
-<pre><code class="language-index.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;ja&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;jqueryのajaxのサンプル&lt;/title&gt;
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-$( function() {
+    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#button&#39;</span>).<span style="color:#a6e22e">click</span>(
+        <span style="color:#66d9ef">function</span>(){
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">formData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#form&#34;</span>).<span style="color:#a6e22e">serialize</span>();
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;formData:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">formData</span>);
+            <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+                <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span><span style="color:#a6e22e">apiUrl</span>, <span style="color:#75715e">// 通信先のURL
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;POST&#39;</span>,<span style="color:#75715e">// 使用するHTTPメソッド (GET/ POST)
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span><span style="color:#a6e22e">formData</span>, <span style="color:#75715e">// 送信するデータ
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;json&#39;</span>, <span style="color:#75715e">// 応答のデータの種類 (xml/html/script/json/jsonp/text)
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">contentType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;application/json&#34;</span>,
+                <span style="color:#75715e">// 通信に成功した時に実行される
+</span><span style="color:#75715e"></span>                }).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>,<span style="color:#a6e22e">textStatus</span>,<span style="color:#a6e22e">jqXHR</span>) {
+                    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;成功:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span>);
 
-    var apiUrl = 'https://xxxxxxxxxxx/Test';
-
-    $('#button').click(
-        function(){
-            var formData = $(&quot;#form&quot;).serialize();
-            console.log(&quot;formData:&quot; + formData);
-            $.ajax({
-                url:apiUrl, // 通信先のURL
-                type:'POST',// 使用するHTTPメソッド (GET/ POST)
-                data:formData, // 送信するデータ
-                dataType:'json', // 応答のデータの種類 (xml/html/script/json/jsonp/text)
-                contentType: &quot;application/json&quot;,
-                // 通信に成功した時に実行される
-                }).done(function(response,textStatus,jqXHR) {
-                    console.log(&quot;成功:&quot; + jqXHR.status);
-
-                    if (response.completed == 1)
+                    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">completed</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)
                     {
-                        $('#message').html('登録を完了しました。');
-                        console.log(response.data.email);
+                        <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#message&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;登録を完了しました。&#39;</span>);
+                        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">email</span>);
                     }
-                    else if(response.completed == 0)
+                    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">completed</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
                     {
-                        $('#message').html('サーバーの内部エラーのため登録が失敗しました。');
+                        <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#message&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;サーバーの内部エラーのため登録が失敗しました。&#39;</span>);
                     }
 
-                 // 通信に失敗した時に実行される
-                }).fail(function(jqXHR, textStatus, errorThrown) {
-                    alert(&quot;失敗:&quot; + jqXHR.status);
-                    console.log(&quot;失敗:&quot; + jqXHR.status);
+                 <span style="color:#75715e">// 通信に失敗した時に実行される
+</span><span style="color:#75715e"></span>                }).<span style="color:#a6e22e">fail</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">jqXHR</span>, <span style="color:#a6e22e">textStatus</span>, <span style="color:#a6e22e">errorThrown</span>) {
+                    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;失敗:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span>);
+                    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;失敗:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span>);
                 });
         });
 });
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;form id=&quot;form&quot; action=&quot;&quot;&gt;
-&lt;input type=&quot;button&quot; id=&quot;button&quot; value=&quot;開始ボタン&quot;&gt;&lt;br/&gt;
-氏名&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
-メールアドレス&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br /&gt;
-&lt;/form&gt;
-&lt;div id=&quot;message&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<h2 id="おわりに">おわりに</h2>
-
+&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;開始ボタン&#34;</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+氏名&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;
+メールアドレス&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;
+&lt;/<span style="color:#f92672">form</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h2 id="おわりに">おわりに</h2>
 <p>今回は簡単に試せるようにするためにjQueryを利用していますが、ReactやVeuなどかを利用する場合も応用が効くと思いますので是非ご利用ください。</p>
-
 <p>また、今回の記事ですが</p>
-
 <ul>
 <li>不効率なやり方をしている</li>
 <li>間違っている部分がある</li>
 <li>もっと良い方法がある</li>
 </ul>
-
 <p>などなど、お気付きの点がありましたら<a href="https://docs.google.com/forms/d/e/1FAIpQLScwSTE25m2hve8s0VNAoFb__Jm_zabP7Snh1kn5b3Ri2_x1pw/viewform">こちらのお問い合わせ</a>からご連絡を頂けると助かります。</p>
-
 <p>宜しくお願いします致します。</p>
 
                 </section>

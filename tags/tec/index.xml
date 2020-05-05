@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tec on 3panda</title>
@@ -22,11 +22,12 @@
 誰かのお役に立てれば幸いです。
 前提条件 サブアカウントとして扱いたいGitHubユーザーのSSH Key(ここではsub_id_rsa)は用意済みでありGitHub側で設定済みとします。
 configにサブアカウント用の設定を追加 ~/.ssh/config configにgithub-subの設定を用意します。 この時に「IdentityFile」にはサブアカウントとして管理したいGitHubアカウント用のSSH Keyを指定します。
-# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git  clone HostNameのところをsubの変更して行います。
-git clone @github-sub:XXXX/xxxx.git:  もし cloneで怒られたらこれ
-git remote rm origin  submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
-git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &amp;ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
-この設定が無いとglobalで設定されたuserで反映されてしまいます。</description>
+# こちらは通常用 概ねこんな感じになっているはず Host github github.com HostName github.com IdentityFile ~/.ssh/id_rsa # mainアカウント用のSSH Key User git # 以下を今回追加 Host github-sub HostName github.com IdentityFile ~/.ssh/sub_id_rsa # subアカウント用のSSH Key User git clone HostNameのところをsubの変更して行います。
+git clone @github-sub:XXXX/xxxx.git: もし cloneで怒られたらこれ
+git remote rm origin submoduleの場合 同じくHostNameのところをsubの変更して行います。 以下はあるリポジトリをsubと言う弟子ディレクトリに紐付けています。
+git submodule add -b master git@github-sub:XXXX/xxxx.git sub config &amp;ndash;localでサブアカウント用の設定を行う config localでサブアカウントの名前とemailを設定しておきます。
+この設定が無いとglobalで設定されたuserで反映されてしまいます。
+git config --local user.name [SubのGitHubアカウントの名前] git config --local user.</description>
     </item>
     
     <item>
@@ -36,15 +37,13 @@ git submodule add -b master git@github-sub:XXXX/xxxx.git sub  config &amp;ndash;
       
       <guid>https://3panda.github.io/posts/20180719/</guid>
       <description>今回は技術ネタです。一応エンジニアなので(^^:
-今年になってAWSのLambda + APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが
-Ajaxを利用する時にかなり苦戦を強いられました。
+今年になってAWSのLambda + APIGatewayを使って俗に言うサーバーレス開発ってのを結構やったんですが Ajaxを利用する時にかなり苦戦を強いられました。
 今回はその時に覚えた事を備忘録代わりに記事にしたいと思います。
 概要 今回はありがちな入力フォームをAjaxで実装して見たいと思います。 フロントエンド側(html)とバックエンド側(サーバサイドなど)の連携で最も多いのはフォーム画面だと思います。 そして最近にWebフォームでAjaxを利用しないケースは少ないのでAjaxを利用します。
 実装の流れ  HTMLのフォームに名前とメールアドレスを入力しAPIGatewayへ APIGatewayが受け取りLambdaへフォーム内容を渡す Lambdaは受け取った名前やアドレスを扱ってなんらかの処理（例えばDB書き込みやメールを送るなどだがここの処理は割愛） Lambdaは通信結果をAPIGatewayへ HTMLはAjaxで結果を受け取る  図解するとこんな感じ html&amp;lt;&amp;mdash; API Gateway &amp;ndash;&amp;gt; Lambda
 作成手順 1.API Gateway: Lambda関数を先に作作成時に自動生成だとメソッド: ANYになりCORSが有効にして効かない不具合が あるため、ANYを削除しPOSTで新たにメソッドを作成
  アクションのプルダウンメニューで以下の順に実行 リソースのアクション-メソッドの作成 POSTを選択  1-1.階層 階層は以下のようになっている想定
-/ -/Test --POST  1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択 アジアパシフィック(東京)なのでap-northeast-1 Lambda 関数 Test デフォルトタイムアウトの使用 チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行 1. リソースのアクション-CORSの有効化 1. APIアクション-APIのデプロイ 1. デプロイ
-1-4.メソッドリクエスト ※ ここの設定が少々怪しいので要検証</description>
+/ -/Test --POST 1-2. セットアップ(POST - セットアップ)  統合タイプ-Lambda 関数を選択 Lambda プロキシ統合の使用-今回はチェックを入れない Lambda リージョン-適切なものを選択   アジアパシフィック(東京)なのでap-northeast-1   Lambda 関数   Test   デフォルトタイムアウトの使用   チェック  1-3.CORSの有効化 アクションのプルダウンメニューで以下の順に実行</description>
     </item>
     
   </channel>

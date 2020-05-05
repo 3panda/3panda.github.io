@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>宣言 on 3panda</title>
@@ -66,11 +66,10 @@ Reactなので必然的にHTMLはもちろん、CSSも書く事になるので
 と実感するようになりました。
 この二年間、Webについては一応は情報は追ってはいたんですが、進歩が早くて浦島太郎状態です(^^:
 Gruntはいつの間にか姿が見えなくなり、glupは触る前に見かけなくなり、今はタスクランナーとかはWebpackなんですね。
-CSSプロセッサはPostCSSはまだ何となく、SASSは「知ってるぞ！」って思っていたらnode-sassだし(元はRubyで基本同じだけど)&amp;hellip;
-まぁ相変わらずなのはWebのフロントは環境構築が大変&amp;hellip;
+CSSプロセッサはPostCSSはまだ何となく、SASSは「知ってるぞ！」って思っていたらnode-sassだし(元はRubyで基本同じだけど)&amp;hellip; まぁ相変わらずなのはWebのフロントは環境構築が大変&amp;hellip;
 それでもJavaScriptのフレームワークはReact.jsやVue.jsが定着化し
-Alt.jsもTypeScriptかBabel(正確にはAltでは無い？)のほぼ二つに定番として落ち着いているので 今が新たにWebを始めるには丁度良い時期なのかもしれません。
-最も、この進化の早い事こそWebの醍醐味で、この事に改めて魅力を感じれたからこそ、再び帰ってきった気しています。
+Alt.jsもTypeScriptかBabel(正確にはAltでは無い？)のほぼ二つに定番として落ち着いているので 今が__新たにWebを始めるには丁度良い時期__なのかもしれません。
+最も、この__進化の早い事こそWebの醍醐味で、この事に改めて魅力を感じれた__からこそ、再び帰ってきった気しています。
 そんなわけで3pandaは気持ちを新たにWebのエンジニアとして頑張って参ります。
 今後ともよろしくお願い致します。
 PS:
