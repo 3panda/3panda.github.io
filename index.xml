@@ -6,10 +6,27 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 05 May 2020 19:35:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 06:28:06 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>少しわかってきたのでやってみたいこと</title>
+      <link>https://3panda.github.io/posts/20200507/</link>
+      <pubDate>Thu, 07 May 2020 06:28:06 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200507/</guid>
+      <description>ROSと言うロボットを制御する為のフレームワークがあります。
+AIの次は何？って考えながら調べてもう２年くらい前に見つけました。
+それから会社でも取り組みだし、色々と他の優先事項に追われて中途半端な学習で身に付かなかったのですが、 今年の三月くらいから時間を取れて、なんとか基礎を取得し、四月はiRobot Create2(掃除機能のないRoomba600シリーズ）を検証機にしようと取り込んでました。
+ちなみに会社では他にデモ開発とかやってます。
+ROSがどんな感じで実際のロボットに繋がるのかを少し理解したのでオリジナルを作りたいと考えています。
+と言ってもArduinoので動く電子工作の簡単なロボットをROSで制御するくらいな事ですが、
+それでも色々とやらないといけないようなので苦戦しそうです。 でもそれで成長出来ます。
+そして楽しそう。
+それでは</description>
+    </item>
     
     <item>
       <title>Test</title>
