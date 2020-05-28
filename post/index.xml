@@ -6,10 +6,28 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 28 May 2020 06:28:27 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 06:26:45 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>約9年使ったMacが壊れました</title>
+      <link>https://3panda.github.io/posts/20200529/</link>
+      <pubDate>Fri, 29 May 2020 06:26:45 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200529/</guid>
+      <description>この記事の下書きをしていた5/21の朝
+このBLOGの更新に使っていたMacBookAirが遂に壊れました
+（＞＜）
+故障音からするとRAMが壊れているようなので限界なようです。
+世間では割と不具合の多い機種と言われていたのですが、私は運良く大きな故障もなく寿命を迎えたのだと思っています。
+Unityでゲーム開発をしたり、フリーランス時代の開発に使ったり
+そしてこのBLOGの構築に使ったり
+最後の最後まで良くやってくれたと感謝しかありません。
+当面は箱に入れて保存しておこうと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>そしてよく寝れました</title>
