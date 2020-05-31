@@ -6,10 +6,25 @@
     <description>Recent content in Posts on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 29 May 2020 06:26:45 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 06:40:00 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>知っているようで知らない事</title>
+      <link>https://3panda.github.io/posts/20200601/</link>
+      <pubDate>Mon, 01 Jun 2020 06:40:00 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200601/</guid>
+      <description>BLOGをなんとか復活させる中で悪戦苦闘
+git の事もgithubの事もなんでも知っているようで忘れていたり
+そもそも知らなかったり
+これは全てにおいてそうなのだと思います
+知っている気でいるだけで分かっている事なんてごくわずか
+そうおもって精進します
+それでは</description>
+    </item>
     
     <item>
       <title>約9年使ったMacが壊れました</title>
