@@ -6,10 +6,26 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 02 Jul 2020 06:27:08 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 06:23:53 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新しい力を身に付けたい</title>
+      <link>https://3panda.github.io/posts/20200703/</link>
+      <pubDate>Fri, 03 Jul 2020 06:23:53 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200703/</guid>
+      <description>プログラマー35歳定年説なんて言葉もありますが
+本当にこの一年近くプログラミングやってません。
+状況的にプロジェクトマネージャーとかチームのとりまとめとか、 そんな事をやっています。
+それがまぁ嫌なわけでもないのですが、それにしてはちゃんと出来ていないと感じ
+その分野もキッチリ勉強して、やっていかないとなぁと思っています。
+またプログラムを集中してしないとしても、新しい技術や具体的な活用方法などは
+さらにアンテナの感度を強めてキャッチアップしていこうと思います。
+それでは</description>
+    </item>
     
     <item>
       <title>信念</title>
