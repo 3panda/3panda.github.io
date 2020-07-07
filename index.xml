@@ -6,10 +6,27 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Jul 2020 06:28:12 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 06:25:41 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>トラブル対応</title>
+      <link>https://3panda.github.io/posts/20200708/</link>
+      <pubDate>Wed, 08 Jul 2020 06:25:41 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200708/</guid>
+      <description>起きている事象について原因の仮設を立てる
+仮説を立てたら、その仮説が正しいか、再現できるか検証する
+その検証はなるべく最小の構成で
+再現が出来なければまた仮説を立てるところに戻る
+再現が出来たら仮説は仮設で無くなる
+次は対処方法を考える
+その方法を検証する
+また最小の構成で
+それでは</description>
+    </item>
     
     <item>
       <title>令和二年の七夕</title>
