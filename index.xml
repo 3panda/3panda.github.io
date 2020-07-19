@@ -6,10 +6,31 @@
     <description>Recent content on 3panda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 17 Jul 2020 05:50:53 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 06:19:37 +0900</lastBuildDate>
     
 	<atom:link href="https://3panda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>学び</title>
+      <link>https://3panda.github.io/posts/20200720/</link>
+      <pubDate>Mon, 20 Jul 2020 06:19:37 +0900</pubDate>
+      
+      <guid>https://3panda.github.io/posts/20200720/</guid>
+      <description>なんだかんだと勉強が習慣化
+今はAWSの資格試験に向けてがんばっております
+勉強法は動画学習と参考書
+よく見ている動画学習は座学とハンズオンがセット
+座学は出来るだけ、平日の会社に出勤しない日の朝
+通勤が無い分、時間に余裕が出来るのでその時間に倍速で見ておく
+そして週末に時間のかかるハンズオン
+そんな感じです
+資格試験の勉強ですが前提としてはサービスの理解と
+有効的な使い方を学んでいるので色々と発見があります。
+良い感じで続けられているので今回の目標を達成しても
+継続したいと思っています。
+それでは</description>
+    </item>
     
     <item>
       <title>早起き</title>
